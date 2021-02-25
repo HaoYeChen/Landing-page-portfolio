@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hao Ye Chen</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+<body>
+    <!-- Navbar -->
+    <!-- <div class="navbar">
+        <div class="container">
+            <a href="#" class="logo"><span>H</span>ao</a>
+
+            <img id="mobile-cta" class="mobile-menu" src="img/menu.svg" alt="Open Navigation">
+
+            <nav>
+                <img id="mobile-exit" class="mobile-menu-exit" src="img/exit.svg" alt="Close Navigation">
+                <ul class="primary-nav">
+                    <li class="current"><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div> -->
+
+    <header>
+        <a href="#" class="site-logo" aria-label="homepage">豪</a>
+        <nav class="main-nav">
+            <ul class="nav-list">
+                <li class="nav-list-item"><a href="#" class="nav-link">Home</a></li>
+                <li class="nav-list-item"><a href="#" class="nav-link">About</a></li>
+                <li class="nav-list-item"><a href="#" class="nav-link">Projects</a></li>
+                <li class="nav-list-item"><a href="#" class="nav-link">Contact</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Section Home -->
+    <section class="home-section">
+        <div class="home-intro" class="demo">
+
+            <h1>Jeg hedder <span>Hao Ye Chen</span>.</h1>
+
+            
+            <a href="#scroll-to-about"><span></span>Scroll</a>
+            
+        </div>
+    </section>
+
+    <!-- About -->
+    <section class="about-section" id="scroll-to-about">
+        <div class="container">
+            <div class="About">
+                <h2 class="title">About</h2>
+                
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <!-- Projects -->
+    <section class="projects-section">
+        <div class="container">
+            <div class="projects">
+                <h2 class="title">Projects</h2>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-form">
+                <h2 class="title">Contact</h2>
+
+                <!-- <form action="mailto:haoyechen@hotmail.com">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" placeholder="Please Enter Your Name">
+
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Please Enter Your Email">
+
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                
+                    <input type="submit" class="submit-button" value="Send Message">
+                
+                
+                </form> -->
+            
+                <form name="contact" method="POST" data-netlify="true">
+                    <div class="fields">
+                        <div class="field half">
+                            <input type="text" name="name" id="name" placeholder="Name" />
+                        </div>
+                        <div class="field half">
+                            <input type="email" name="email" id="email" placeholder="Email" />
+                        </div>
+                        <div class="field">
+                            <textarea name="message" id="message" placeholder="Message" rows="7"></textarea>
+                        </div>
+                        <div class="field">
+                            <input type="file" name="myfile" id="myfile" placeholder="Upload File" rows="7">
+                        </div>
+                        <div class="field">
+                            <div data-netlify-recaptcha="true"></div>
+                        </div>
+
+                    </div>
+                    <ul class="actions">
+                        <li><input type="submit" value="Send Message" class="button primary" /></li>
+                    </ul>
+                </form>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="center bg-dark">
+        <p>Hao Ye Chen &copy; 2021 - All Rights Reserved</p>
+        <div class="social-menu">
+            <ul>
+                <li><a href="#" class="fa fa-facebook"></a></li>
+                <li><a href="#" class="fa fa-linkedin"></a></li>
+                <li><a href="#" class="fa fa-github"></a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="javascript/observers.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+          // Add smooth scrolling to all links
+          $("a").on('click', function(event) {
+        
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+              // Prevent default anchor click behavior
+              event.preventDefault();
+        
+              // Store hash
+              var hash = this.hash;
+        
+              // Using jQuery's animate() method to add smooth page scroll
+              // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+              $('html, body').animate({
+                scrollTop: $(hash).offset().top
+              }, 800, function(){
+           
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+              });
+            } // End if
+          });
+        });
+        </script>
+    <!-- <script src="javascript/main.js"></script> -->
+</body>
+</html>
