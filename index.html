@@ -102,32 +102,18 @@
             <div class="projects">
                 <h2 class="title">Projects</h2>
 
-            </div>
+                
         </div>
     </section>
 
     <!-- Contact -->
     <section class="contact-section">
         <div class="container">
-            <div class="contact-form">
+            <div class="contact-left">
                 <h2 class="title">Contact</h2>
-
-                <!-- <form action="mailto:haoyechen@hotmail.com">
-                    <label for="name">Name</label>
-                    <input type="text" name="name" id="name" placeholder="Please Enter Your Name">
-
-                    <label for="email">Email</label>
-                    <input type="email" name="email" id="email" placeholder="Please Enter Your Email">
-
-                    <label for="message">Message</label>
-                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
-                
-                    <input type="submit" class="submit-button" value="Send Message">
-                
-                
-                </form> -->
             
                 <form name="contact" method="POST" data-netlify="true">
+                    <input type="hidden" name="form-name" value="contact">
                     <div class="fields">
                         <div class="field half">
                             <input type="text" name="name" id="name" placeholder="Name" />
@@ -144,14 +130,35 @@
                         <div class="field">
                             <div data-netlify-recaptcha="true"></div>
                         </div>
-
                     </div>
                     <ul class="actions">
                         <li><input type="submit" value="Send Message" class="button primary" /></li>
                     </ul>
                 </form>
             </div>
+
+
+            <div class="contact-right">
+                <div>
+                    <h3>Phone</h3>
+                    <p>60 81 33 87</p>
+                </div>
+                <div>
+                    <h3>Email</h3>
+                    <p><a href="mailto:haoyechen@hotmail.com">haoyechen@hotmail.com</a></p>
+                </div>
+                <div>
+                    <h3>Social</h3>
+                    <ul class="social-media-icons">
+                        <li><a href="#" class="fa fa-facebook"><span class="label">Facebook</span></a></li>
+                        <li><a href="#" class="fa fa-linkedin"><span class="label">Linkedin</span></a></li>
+                        <li><a href="#" class="fa fa-github"><span class="label">Github</span></a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
+
+        
 
     </section>
 
@@ -159,14 +166,14 @@
     <!-- Footer -->
     <footer class="center bg-dark">
         <p>Hao Ye Chen &copy; 2021 - All Rights Reserved</p>
-        <div class="social-menu">
-            <ul>
-                <li><a href="#" class="fa fa-facebook"></a></li>
-                <li><a href="#" class="fa fa-linkedin"></a></li>
-                <li><a href="#" class="fa fa-github"></a></li>
-            </ul>
-        </div>
     </footer>
+
+
+
+
+
+
+
 
     <script src="javascript/observers.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -196,6 +203,7 @@
           });
         });
         </script>
+        
     <!-- <script src="javascript/main.js"></script> -->
 </body>
 </html>
