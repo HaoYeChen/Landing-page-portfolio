@@ -93,22 +93,40 @@ body{
 /* Home */
 .home-section{
     background-image:url('/img/background.jpg');
+    /* The background image is resized to cover the entire container,
+    even if it has to stretch the image or cut a little bit off one of the edges. */
     background-size:cover;
+    /* the background image will be positioned in the center of the element */
     background-position:center;
+    /* Relative to 1% of the height of the viewport* */
     height:100vh;
+    /* This defines a flex container; inline or block depending on the given value.
+    It enables a flex context for all its direct children. */
+    /* The element is turned into an flexbox container.
+    On its own, it behaves like a block element.
+    Its child elements will be turned into flexbox items.
+    */
     display:flex;
+    /* Defines how flexbox items are ordered within a flexbox container
+     */
     flex-direction:column;
+    /* The flexbox/grid items are centered along the container's main axis. */
     justify-content:center;
+    /* The flexbox items are aligned at the center of the cross axis. By default, the cross axis is vertical.
+    This means the flexbox items will be centered vertically. */
     align-items:center;
+    /* The text content is centered. */
     text-align:center;
-    padding:0 20px;
+
+    /* padding:0 20px; */
   }
   .home-intro a{
     padding-top: 60px;
   }
 .home-intro a span{
   position: absolute;
-  top: 0;
+  /* Height of scroll button */
+  top: 90%;
   left: 50%;
   width: 30px;
   height: 50px;
@@ -131,6 +149,7 @@ body{
   -webkit-animation: scrollbutton 2s infinite;
   animation: scrollbutton 2s infinite;
   box-sizing: border-box;
+  
 }
 @-webkit-keyframes scrollbutton {
   0% {
@@ -198,8 +217,7 @@ body{
 
 
 
-
-
+/* Projects */
 
 
 
@@ -231,50 +249,4 @@ footer {
 }
 footer p{
     margin: 0;
-}
-.social-menu ul {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 0;
-  margin: 0;
-  display: flex;
-}
-.social-menu ul li {
-  list-style: none;
-  margin: 0 10px;
-}
-.social-menu ul li .fa {
-  color: #000000;
-  font-size: 25px;
-  line-height: 50px;
-  transition: .5s;
-}
-.social-menu ul li .fa:hover {
-  color: #ffffff;
-}
-.social-menu ul li a {
-  position: relative;
-  display: block;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background-color: white;
-  text-align: center;
-  transition: 0.5s;
-  transform: translate(0,0px);
-  box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.5);
-}
-.social-menu ul li a:hover {
-  transform: rotate(0deg) skew(0deg) translate(0, -10px);
-}
-.social-menu ul li:nth-child(1) a:hover {
-  background-color: #3b5999;
-}
-.social-menu ul li:nth-child(2) a:hover {
-  background-color: #55acee;
-}
-.social-menu ul li:nth-child(3) a:hover {
-  background-color: #e4405f;
 }
