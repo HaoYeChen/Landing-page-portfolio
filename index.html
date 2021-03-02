@@ -29,13 +29,13 @@
     </div> -->
 
     <header>
-        <a href="#" class="site-logo" aria-label="homepage">豪</a>
+        <a href="#home" class="site-logo" aria-label="homepage">豪</a>
         <nav class="main-nav">
             <ul class="nav-list">
-                <li class="nav-list-item"><a href="#" class="nav-link">Home</a></li>
-                <li class="nav-list-item"><a href="#" class="nav-link">About</a></li>
-                <li class="nav-list-item"><a href="#" class="nav-link">Projects</a></li>
-                <li class="nav-list-item"><a href="#" class="nav-link">Contact</a></li>
+                <li class="nav-list-item"><a href="#home" class="nav-link">Home</a></li>
+                <li class="nav-list-item"><a href="#scroll-to-about" class="nav-link">About</a></li>
+                <li class="nav-list-item"><a href="#projects" class="nav-link">Projects</a></li>
+                <li class="nav-list-item"><a href="#contact" class="nav-link">Contact</a></li>
 
             </ul>
         </nav>
@@ -70,11 +70,11 @@
 
 
     <!-- Section Home -->
-    <section class="home-section">
+    <section class="home-section"  id="home">
         <div class="home-intro" class="demo">
 
-            <h1>Jeg hedder <span>Hao Ye Chen</span>.</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum vero, reiciendis officiis distinctio officia magni!</p>
+            <h1 class="home-h1">Jeg hedder <span class="home-span">Hao Ye Chen</span>.</h1>
+            <p class="home-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum vero, reiciendis officiis distinctio officia magni!</p>
             
             <a href="#scroll-to-about"><span></span></a>
             
@@ -97,7 +97,7 @@
 
 
     <!-- Projects -->
-    <section class="projects-section">
+    <section class="projects-section"  id="projects">
         <div class="container">
             <div class="projects">
                 <h2 class="title">Projects</h2>
@@ -107,11 +107,32 @@
     </section>
 
     <!-- Contact -->
-    <section class="contact-section">
+    <section class="contact-section"  id="contact">
         <div class="container">
             <div class="contact-left">
                 <h2 class="title">Contact</h2>
             
+                <div class="contact-right">
+                    <div>
+                        <h3>Phone</h3>
+                        <p>60 81 33 87</p>
+                    </div>
+                    <div>
+                        <h3>Email</h3>
+                        <p><a href="mailto:haoyechen@hotmail.com">haoyechen@hotmail.com</a></p>
+                    </div>
+                    <div>
+                        <h3>Social</h3>
+                        <ul class="social-media-icons">
+                            <li><a href="#" class="fa fa-facebook"><span class="label">Facebook</span></a></li>
+                            <li><a href="#" class="fa fa-linkedin"><span class="label">Linkedin</span></a></li>
+                            <li><a href="#" class="fa fa-github"><span class="label">Github</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+
+
                 <form name="contact" method="POST" data-netlify="true">
                     <input type="hidden" name="form-name" value="contact">
                     <div class="fields">
@@ -138,24 +159,7 @@
             </div>
 
 
-            <div class="contact-right">
-                <div>
-                    <h3>Phone</h3>
-                    <p>60 81 33 87</p>
-                </div>
-                <div>
-                    <h3>Email</h3>
-                    <p><a href="mailto:haoyechen@hotmail.com">haoyechen@hotmail.com</a></p>
-                </div>
-                <div>
-                    <h3>Social</h3>
-                    <ul class="social-media-icons">
-                        <li><a href="#" class="fa fa-facebook"><span class="label">Facebook</span></a></li>
-                        <li><a href="#" class="fa fa-linkedin"><span class="label">Linkedin</span></a></li>
-                        <li><a href="#" class="fa fa-github"><span class="label">Github</span></a></li>
-                    </ul>
-                </div>
-            </div>
+            
         </div>
 
         
@@ -175,7 +179,7 @@
 
 
 
-    <script src="javascript/observers.js"></script>
+    <!-- smoth scrolling -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
         $(document).ready(function(){
@@ -204,6 +208,6 @@
         });
         </script>
         
-    <!-- <script src="javascript/main.js"></script> -->
+    <script src="javascript/main.js"></script>
 </body>
 </html>
