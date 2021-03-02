@@ -92,7 +92,11 @@ body{
 
 /* Home */
 .home-section{
-    background-image:url('/img/background.jpg');
+  /* top, transparent black, faked with gradient */ 
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.4), 
+      rgba(0, 0, 0, 0.4)
+    ), url('/img/background.jpg');
     /* The background image is resized to cover the entire container,
     even if it has to stretch the image or cut a little bit off one of the edges. */
     background-size:cover;
@@ -120,12 +124,21 @@ body{
 
     /* padding:0 20px; */
   }
+.home-h1, .home-p{
+  color: white;
+  font-weight: bold;
+  
+}
+.home-span{
+  color: red;
+}
+
   .home-intro a{
     padding-top: 60px;
   }
 .home-intro a span{
   position: absolute;
-  /* Height of scroll button */
+  /* top of scroll button */
   top: 90%;
   left: 50%;
   width: 30px;
@@ -134,6 +147,8 @@ body{
   border: 2px solid #fff;
   border-radius: 50px;
   box-sizing: border-box;
+  /* border-width property sets the width of an element's four borders. */
+  border-width: 2px;
 }
 
 .home-intro a span::before{
@@ -199,7 +214,7 @@ body{
   transition: opacity .3s;
 }
 .demo a:hover {
-  opacity: .5;
+  opacity: 0.5;
 }
 
 
@@ -218,12 +233,16 @@ body{
 
 
 /* Projects */
+.projects-section{
+  height: 100vh;
+}
 
 
 
 
-
-
+.contact-section{
+  height: 100vh;
+}
 
 
 
