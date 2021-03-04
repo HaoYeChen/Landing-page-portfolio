@@ -1,9 +1,9 @@
-// Navbar
+// Main navbar
 const header = document.querySelector("header");
 const sectionOne = document.querySelector(".home-intro");
 
 const sectionOneOptions = {
-  rootMargin: "395px 0px 0px 0px"
+  rootMargin: "300px 0px 0px 0px"
 };
 
 const sectionOneObserver = new IntersectionObserver(function(
@@ -22,4 +22,17 @@ sectionOneOptions);
 
 sectionOneObserver.observe(sectionOne);
 
-// End of navbar
+// End of main navbar
+
+//Hamburger menu
+function openNav() {
+  document.getElementById("hamburger").style.height = "100%";
+}
+
+function closeNav() {
+  document.getElementById("hamburger").style.height = "0%";
+}
+
+
+
+//Hamburger menu
