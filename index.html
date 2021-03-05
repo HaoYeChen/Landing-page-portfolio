@@ -10,25 +10,8 @@
 </head>
 <body>
     <!-- Navbar -->
-    <!-- <div class="navbar">
-        <div class="container">
-            <a href="#" class="logo"><span>H</span>ao</a>
-
-            <img id="mobile-cta" class="mobile-menu" src="img/menu.svg" alt="Open Navigation">
-
-            <nav>
-                <img id="mobile-exit" class="mobile-menu-exit" src="img/exit.svg" alt="Close Navigation">
-                <ul class="primary-nav">
-                    <li class="current"><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </div> -->
-
-    <header>
+    
+    <!-- <header>
         <a href="#home" class="site-logo" aria-label="homepage">豪</a>
         <nav class="main-nav">
             <ul class="nav-list">
@@ -36,12 +19,40 @@
                 <li class="nav-list-item"><a href="#scroll-to-about" class="nav-link">About</a></li>
                 <li class="nav-list-item"><a href="#projects" class="nav-link">Projects</a></li>
                 <li class="nav-list-item"><a href="#contact" class="nav-link">Contact</a></li>
-
             </ul>
         </nav>
+    </header> -->
+
+<header>
+        <a href="#home" class="site-logo" aria-label="homepage">豪</a>
+        <span class="hamburger-menu-icon" onclick="openNav()">&#9776;</span>
+        <nav>
+            <!-- <div class="main-nav">
+                <img id="mobile-exit" class="mobile-menu-exit" src="img/exit.svg" alt="Close Navigation">
+                <ul class="nav-list">
+                    <li class="nav-list-item"><a href="#home" class="nav-link">Home</a></li>
+                    <li class="nav-list-item"><a href="#scroll-to-about" class="nav-link">About</a></li>
+                    <li class="nav-list-item"><a href="#projects" class="nav-link">Projects</a></li>
+                    <li class="nav-list-item"><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </div> -->
+
+            <div id="hamburger" class="overlay">
+                <div class="closebtn" onclick="closeNav()">&times;</div>
+                
+                <div class="overlay-content">
+                    <ul class="menu">
+                        <li class="nav-list-item"><a href="#home" class="nav-link">Home</a></li>
+                        <li class="nav-list-item"><a href="#scroll-to-about" class="nav-link">About</a></li>
+                        <li class="nav-list-item"><a href="#projects" class="nav-link">Projects</a></li>
+                        <li class="nav-list-item"><a href="#contact" class="nav-link">Contact</a></li>
+                    </ul>
+                </div>
+              </div>
+            
+              
+        </nav>
     </header>
-
-
 
 
 
