@@ -34,5 +34,10 @@ function closeNav() {
 }
 
 
+// close hamburger menu after click a
+$( '.menu li a' ).on("click", function(){
+  $('#hamburger-menu-icon').click();
+});
 
-//Hamburger menu
+
+// End of hamburger menu
