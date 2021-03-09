@@ -1,221 +1,220 @@
-@import url('https://fonts.googleapis.com/css2?family=Zhi+Mang+Xing&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Zhi+Mang+Xing&display=swap");
 
-
-body{
-    margin: 0;
-    font-family: "Poppins", sans-serif;
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
 }
 
 /* Logo */
+
 .site-logo {
-    font-family: 'Zhi Mang Xing', cursive;
-    font-weight: 900;
-    font-size: 3rem;
-    color: var(--text);
-    text-decoration: none;
-    border: 3px solid var(--text);
-    padding: 5px;
-    border-radius: 50%;
-  }
-  /* End of logo */
-  
-  
-  header {
-    --text: #f4f4f4;
-    --text-inverse: #333;
-    --background: transparent;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 999;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 2em 3em;
-    transition: background 250ms ease-in;
-    background: var(--background);
-    color: var(--text);
-  }
+  font-family: "Zhi Mang Xing", cursive;
+  font-weight: 900;
+  font-size: 3rem;
+  color: var(--text);
+  text-decoration: none;
+  border: 3px solid var(--text);
+  padding: 5px;
+  border-radius: 50%;
+}
 
-  .nav-list {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-  }
+/* End of logo */
 
-  .nav-link {
-    --spacing: 1em;
-    text-decoration: none;
-    color: inherit;
-    display: inline-block;
-    padding: calc(var(--spacing) / 2) var(--spacing);
-    position: relative;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-size: 0.9rem;
-    font-weight: bold;
-  }
+/* Desktop navigation */
 
-  .nav-link:after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: var(--spacing);
-    right: var(--spacing);
-    height: 2px;
-    background: currentColor;
-    -webkit-transform: scaleX(0);
-            transform: scaleX(0);
-    transition: -webkit-transform 150ms ease-in-out;
-    transition: transform 150ms ease-in-out;
-    transition: transform 150ms ease-in-out, -webkit-transform 150ms ease-in-out;
-  }
+header {
+  --text: #f4f4f4;
+  --text-inverse: #333;
+  --background: transparent;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2em 3em;
+  transition: background 250ms ease-in;
+  background: var(--background);
+  color: var(--text);
+}
 
-  .nav-link:hover::after {
-    -webkit-transform: scaleX(1);
-            transform: scaleX(1);
-  }
+.nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
 
-  .nav-scrolled {
-    --text: #333;
-    --text-inverse: #f4f4f4;
-    --background: #f4f4f4;
-    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
-  }
+.nav-link {
+  --spacing: 1em;
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+  padding: calc(var(--spacing) / 2) var(--spacing);
+  position: relative;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
 
+.nav-link:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: var(--spacing);
+  right: var(--spacing);
+  height: 2px;
+  background: currentColor;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  transition: -webkit-transform 150ms ease-in-out;
+  transition: transform 150ms ease-in-out;
+  transition: transform 150ms ease-in-out, -webkit-transform 150ms ease-in-out;
+}
 
-/* Hamburger menu */
+.nav-link:hover::after {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+.nav-scrolled {
+  --text: #333;
+  --text-inverse: #f4f4f4;
+  --background: #f4f4f4;
+  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* End of desktop navigation*/
+
+/* Hamburger menu navigation */
 
 .hamburger-menu-icon {
   font-size: 30px;
   cursor: pointer;
   position: absolute;
   right: 50px;
-  
+  top: 40px;
 }
 
-  .overlay {
-    height: 0%;
-    width: 100%;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0, 0.9);
-    overflow-y: hidden;
-    transition: 0.5s;
-  }
-  
-  .overlay-content {
-    position: relative;
-    top: 25%;
-    width: 100%;
-    text-align: center;
-    margin-top: 30px;
-    list-style: none;
-  }
-  
-  .overlay a {
-    padding: 8px;
-    text-decoration: none;
-    font-size: 36px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-  }
-  
-  .overlay a:hover, .overlay a:focus {
-    color: #f1f1f1;
-  }
-  
-  .overlay .closebtn {
-    position: absolute;
-    top: 30px;
-    right: 45px;
-    font-size: 60px;
-  }
-  
+.overlay {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.9);
+  overflow-y: hidden;
+  transition: 0.5s;
+}
 
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+  list-style: none;
+}
 
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
 
+.overlay a:hover,
+.overlay a:focus {
+  color: #f1f1f1;
+}
 
+.overlay .closebtn {
+  position: absolute;
+  top: 30px;
+  right: 45px;
+  font-size: 60px;
+  cursor: pointer;
+}
 
+/* End of hamburger menu navigation */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Home */
-.home-section{
-  /* top, transparent black, faked with gradient */ 
-    background: linear-gradient(
-      rgba(0, 0, 0, 0.4), 
-      rgba(0, 0, 0, 0.4)
-    ), url('/img/background.jpg');
-    /* The background image is resized to cover the entire container,
+/* Home section */
+.home-section {
+  /* top, transparent black, faked with gradient */
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("/img/background.jpg");
+  /* The background image is resized to cover the entire container,
     even if it has to stretch the image or cut a little bit off one of the edges. */
-    background-size:cover;
-    /* the background image will be positioned in the center of the element */
-    background-position:center;
-    /* Relative to 1% of the height of the viewport* */
-    height:100vh;
-    /* This defines a flex container; inline or block depending on the given value.
+  background-size: cover;
+  /* the background image will be positioned in the center of the element */
+  background-position: center;
+  /* Relative to 1% of the height of the viewport* */
+  height: 100vh;
+  /* This defines a flex container; inline or block depending on the given value.
     It enables a flex context for all its direct children. */
-    /* The element is turned into an flexbox container.
+  /* The element is turned into an flexbox container.
     On its own, it behaves like a block element.
     Its child elements will be turned into flexbox items.
     */
-    display:flex;
-    /* Defines how flexbox items are ordered within a flexbox container
+  display: flex;
+  /* Defines how flexbox items are ordered within a flexbox container
      */
-    flex-direction:column;
-    /* The flexbox/grid items are centered along the container's main axis. */
-    justify-content:center;
-    /* The flexbox items are aligned at the center of the cross axis. By default, the cross axis is vertical.
+  flex-direction: column;
+  /* The flexbox/grid items are centered along the container's main axis. */
+  justify-content: center;
+  /* The flexbox items are aligned at the center of the cross axis. By default, the cross axis is vertical.
     This means the flexbox items will be centered vertically. */
-    align-items:center;
-    /* The text content is centered. */
-    text-align:center;
+  align-items: center;
+  /* The text content is centered. */
+  text-align: center;
 
-    /* padding:0 20px; */
-  }
-.home-h1, .home-p{
+/* End of home section */
+
+
+  /* padding:0 20px; */
+}
+.home-h1,
+.home-p {
   color: white;
   font-weight: bold;
-  
 }
-.home-span{
+.home-span {
   color: red;
 }
 
-  .home-intro a{
-    padding-top: 60px;
-  }
-.home-intro a span{
+/* Go-to-projects button */
+.go-to-projects:link,
+.go-to-projects:visited {
+  background-color: rgba(255, 255, 255, 0);
+  color: #fff;
+  font-weight: bold;
+  border: 3px solid #fff;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  text-transform: uppercase;
+}
+.go-to-projects:hover,
+.go-to-projects:active {
+  background-color: #fff;
+  color: black;
+}
+
+/* End of go-to-projects button */
+
+/* Animation scroll button */
+.home-intro a {
+  padding-top: 100px;
+}
+.home-intro a span {
   position: absolute;
   /* top of scroll button */
   top: 90%;
@@ -230,11 +229,11 @@ body{
   border-width: 2px;
 }
 
-.home-intro a span::before{
+.home-intro a span::before {
   position: absolute;
   top: 10px;
   left: 50%;
-  content: '';
+  content: "";
   width: 6px;
   height: 6px;
   margin-left: -3px;
@@ -243,7 +242,6 @@ body{
   -webkit-animation: scrollbutton 2s infinite;
   animation: scrollbutton 2s infinite;
   box-sizing: border-box;
-  
 }
 @-webkit-keyframes scrollbutton {
   0% {
@@ -287,80 +285,89 @@ body{
   -webkit-transform: translate(0, -50%);
   transform: translate(0, -50%);
   color: #fff;
-  font : normal 400 20px/1 'Josefin Sans', sans-serif;
-  letter-spacing: .1em;
+  font: normal 400 20px/1 "Josefin Sans", sans-serif;
+  letter-spacing: 0.1em;
   text-decoration: none;
-  transition: opacity .3s;
+  transition: opacity 0.3s;
 }
 .demo a:hover {
   opacity: 0.5;
 }
+/* End of animation scroll button */
 
 
-/* About */
+/* About section */
 
-.about-section{
+.about-section {
   height: 100vh;
 }
 
+/* End of about section */
 
+/* Projects section */
 
-
-
-
-
-
-
-/* Projects */
-.projects-section{
+.projects-section {
   height: 100vh;
 }
 
+/*End of projects section */
 
+/* Contaction section */
 
-
-.contact-section{
+.contact-section {
   height: 100vh;
 }
 
-
-
-
-
-
+/* End of contaction section */
 
 
 
 
 
 /* Footer */
-.center{
-    text-align: center;
-    margin: auto;
+.center {
+  text-align: center;
+  margin: auto;
 }
-.bg-dark{
-    background: #333;
-    color: #f4f4f4;
+.bg-dark {
+  background: #333;
+  color: #f4f4f4;
 }
 footer {
-    padding: 2.2rem;
+  padding: 2.2rem;
 }
-footer p{
-    margin: 0;
+footer p {
+  margin: 0;
 }
 
+/* End of footer */
 
+/* Media query */
 
+@media only screen and (max-width: 768px) {
+  .main-nav{
+    display: none;
+  }
+}
 
-/* Mediaquery */
 @media only screen and (min-width: 768px) {
+  .mobile-nav{
+    display: none;
+  }
 
+  
 }
 
 @media only screen and (min-width: 1080px) {
-
+  .mobile-nav{
+    display: none;
+  }
 }
 
 @media only screen and (min-width: 1450px) {
-
+  .mobile-nav{
+    display: none;
+  }
 }
+
+/* End of media query */
