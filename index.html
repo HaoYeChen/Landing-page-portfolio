@@ -6,8 +6,8 @@
     <title>Hao Ye Chen</title>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
-    
+    <!-- Browser tab logo -->
+    <link rel="icon" href="/img/hao-logo.png">
 </head>
 <body>
     <!-- Navbar -->
@@ -90,51 +90,52 @@
             <div class="contact-left">
                 <h2 class="title">Contact</h2>
                 
-            
-                <div class="contact-right">
-                    <div>
-                        <h3>Phone</h3>
-                        <p>60 81 33 87</p>
-                    </div>
-                    <div>
-                        <h3>Email</h3>
-                        <p><a href="mailto:haoyechen@hotmail.com">haoyechen@hotmail.com</a></p>
-                    </div>
-                    <div>
-                        <h3>Social</h3>
-                        <ul class="social-media-icons">
-                            <li><a href="#" class="fa fa-facebook"><span class="label">Facebook</span></a></li>
-                            <li><a href="#" class="fa fa-linkedin"><span class="label">Linkedin</span></a></li>
-                            <li><a href="#" class="fa fa-github"><span class="label">Github</span></a></li>
-                        </ul>
-                    </div>
-                </div>
-
-
-
                 <form name="contact" method="POST" data-netlify="true">
                     <input type="hidden" name="form-name" value="contact">
                     <div class="fields">
-                        <div class="field half">
-                            <input type="text" name="name" id="name" placeholder="Name" />
-                        </div>
-                        <div class="field half">
-                            <input type="email" name="email" id="email" placeholder="Email" />
+                        <div class="field">
+                            <input type="text" name="name" id="name" placeholder="Name*" required/>
+                            
                         </div>
                         <div class="field">
-                            <textarea name="message" id="message" placeholder="Message" rows="7"></textarea>
+                            <input type="email" name="email" id="email" placeholder="Email*" required/>
+                            
                         </div>
                         <div class="field">
-                            <input type="file" name="myfile" id="myfile" placeholder="Upload File" rows="7">
+                            <textarea name="message" id="message" rows="7" placeholder="Message*" required></textarea>
+                            
+                        </div>
+                        <div class="field">
+                            <input type="file" name="myfile" id="myfile" rows="7">
                         </div>
                         <div class="field">
                             <div data-netlify-recaptcha="true"></div>
                         </div>
+                        <div class="submit-button">
+                            <input type="submit" value="Send" class="button primary" />
+                        </div>
                     </div>
-                    <ul class="actions">
-                        <li><input type="submit" value="Send Message" class="button primary" /></li>
-                    </ul>
+                    
                 </form>
+            </div>
+
+            <div class="contact-right">
+                <div>
+                    <h3>Phone</h3>
+                    <p>60 81 33 87</p>
+                </div>
+                <div>
+                    <h3>Email</h3>
+                    <p><a href="mailto:haoyechen@hotmail.com">haoyechen@hotmail.com</a></p>
+                </div>
+                <div>
+                    <h3>Social</h3>
+                    <ul class="social-media-icons">
+                        <li><a href="#" class="fa fa-facebook"><span class="label">Facebook</span></a></li>
+                        <li><a href="#" class="fa fa-linkedin"><span class="label">Linkedin</span></a></li>
+                        <li><a href="#" class="fa fa-github"><span class="label">Github</span></a></li>
+                    </ul>
+                </div>
             </div>
 
 
@@ -145,6 +146,8 @@
 
     </section>
 
+    <!-- Scroll up button -->
+    <a id="scroll-up-button"></a>
 
     <!-- Footer -->
     <footer class="center bg-dark">
