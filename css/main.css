@@ -201,6 +201,7 @@ header {
   text-decoration: none;
   display: inline-block;
   text-transform: uppercase;
+  transition: background-color 0.5s ease-out;
 }
 .go-to-projects:hover,
 .go-to-projects:active {
@@ -303,9 +304,10 @@ header {
 .title{
   /* This margin-top fixes the white gap between sections*/
   margin-top: 0;
+  /* Padding-top makes navbar dont overlap title */
+  padding-top: 100px;
   font-size: 2rem;
   text-align: center;
-  padding-top: 100px;
   text-transform: uppercase;
 }
 
@@ -317,7 +319,7 @@ header {
 
 .about-section {
   height: 100vh;
-  background-color: rgb(255, 0, 255);
+  background-color: #fff;
 }
 
 /* End of about section */
@@ -326,7 +328,7 @@ header {
 
 .projects-section {
   height: 100vh;
-  background-color: rgb(217, 255, 0);
+  background-color: #f5f5f5;
   
 }
 
@@ -338,10 +340,48 @@ header {
 
 .contact-section {
   height: 100vh;
-  background-color: #252934;
+  background-color: #282b34;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.field{
+  padding: 10px;
+  
+}
+input[type=text], [type=email], textarea {
+  width: 100%;
+  background: #1e242c;
+  padding: 12px;
+  border: 1px solid #1e242c;
+  border-radius: 10px;
+  resize: vertical;
+  color: #fff;
+  outline: none;
+}
+
+input[type=file] {
   
 }
 
+input[type=submit] {
+  background-color: rgba(255, 255, 255, 0);
+  color: #fff;
+  font-weight: bold;
+  border: 3px solid #fff;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  text-transform: uppercase;
+  transition: background-color 0.5s ease-out;
+  width: 100%;
+}
+input[type=submit]:hover {
+  background-color: #fff;
+  color: black;
+  
+}
 
 
 /* End of contaction section */
