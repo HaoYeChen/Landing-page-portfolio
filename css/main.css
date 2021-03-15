@@ -320,6 +320,7 @@ header {
 .about-section {
   height: 100vh;
   background-color: #fff;
+  
 }
 
 /* End of about section */
@@ -344,6 +345,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #fff;
 }
 .field{
   padding: 10px;
@@ -358,10 +360,16 @@ input[type=text], [type=email], textarea {
   resize: vertical;
   color: #fff;
   outline: none;
+  
 }
 
+/* input */
 input[type=file] {
-  
+  width: 98%;
+  color: #fff;
+  border: 1px dashed rgba(255, 255, 255, 0.4);
+  border-style: dashed;
+  padding: 15px;
 }
 
 input[type=submit] {
@@ -369,20 +377,87 @@ input[type=submit] {
   color: #fff;
   font-weight: bold;
   border: 3px solid #fff;
-  padding: 5px 10px;
+  padding: 8px 10px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   text-transform: uppercase;
   transition: background-color 0.5s ease-out;
-  width: 100%;
+  width: 109%;
+  
 }
+
 input[type=submit]:hover {
   background-color: #fff;
   color: black;
   
 }
+.contact-info{
+  padding: 5px;
+}
+.contact-email {
+  text-decoration: none;
+  color: #fff;
+}
 
+/* Social media icons */
+.social-media-icons{
+  list-style-type: none;
+  
+}
+.social-media-icons li{
+  vertical-align: top;
+  display: inline;
+}
+.social-media-icons a{
+  color: #fff;
+  text-decoration: none;
+}
+.fa {
+  margin: 10px;
+}
+
+.fa-facebook {
+  padding:10px 14px;
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transition: .5s;
+  background-color: #282b34;
+  border-radius: 50%;
+}
+.fa-facebook:hover {
+  background-color: #3d5b99;
+}
+
+.fa-linkedin {
+  padding:10px 14px;
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transition: .5s;
+  background-color: #282b34;
+  border-radius: 50%;
+}
+.fa-linkedin:hover {
+  background-color: #0073a4;
+}
+.fa-github {
+  padding:10px 14px;
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transition: .5s;
+  background-color: #282b34;
+  border-radius: 50%;
+}
+.fa-github:hover {
+  background-color: #5a32a3;
+}
+/* End of social media icons */
 
 /* End of contaction section */
 
