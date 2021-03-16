@@ -425,7 +425,6 @@ input[type=submit]:hover {
   -webkit-transition:.5s;
   transition: .5s;
   background-color: #282b34;
-  border-radius: 50%;
 }
 .fa-facebook:hover {
   background-color: #3d5b99;
@@ -439,7 +438,6 @@ input[type=submit]:hover {
   -webkit-transition:.5s;
   transition: .5s;
   background-color: #282b34;
-  border-radius: 50%;
 }
 .fa-linkedin:hover {
   background-color: #0073a4;
@@ -452,7 +450,6 @@ input[type=submit]:hover {
   -webkit-transition:.5s;
   transition: .5s;
   background-color: #282b34;
-  border-radius: 50%;
 }
 .fa-github:hover {
   background-color: #5a32a3;
