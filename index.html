@@ -39,7 +39,7 @@
                         <li class="nav-list-item"><a href="#scroll-to-about" class="nav-link" onclick="closeNav()">About</a></li>
                         <li class="nav-list-item"><a href="#projects" class="nav-link" onclick="closeNav()">Projects</a></li>
                         <li class="nav-list-item"><a href="#contact" class="nav-link" onclick="closeNav()">Contact</a></li>
-                </div>
+                    </div>
             </div>  
         </nav>
     </header>
@@ -121,12 +121,12 @@
 
             <div class="contact-right">
                 <div class="contact-info">
-                    <h3>Phone</h3>
-                    <p>(+45) 60 81 33 87</p>
+                    <h3 onclick="togglePhone()" style="cursor: pointer;">Phone ▾</h3>
+                    <p id="toggle-phone" style="display: none;">(+45) 60 81 33 87</p>
                 </div>
                 <div class="contact-info">
-                    <h3>Email</h3>
-                    <a class="contact-email" href="mailto:haoyechen@hotmail.com">haoyechen@hotmail.com</a>
+                    <h3 onclick="toggleEmail()" style="cursor: pointer;">Email ▾</h3>
+                    <a id="toggle-email" style="display: none;" class="contact-email" href="mailto:haoyechen@hotmail.com">haoyechen@hotmail.com</a>
                 </div>
                 <div class="contact-info">
                     <h3>Social</h3>
@@ -161,7 +161,7 @@
 
 
 
-    <!-- smoth scrolling with help of jquery -->
+    <!-- jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>    
 
     <script src="javascript/main.js"></script>
