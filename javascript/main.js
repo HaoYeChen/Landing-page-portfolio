@@ -66,7 +66,18 @@ $(document).ready(function(){
 
 //End of smooth scrolling
 
-//Toggle function of Phone & Email
+//Toggle & swap text function
+function myFunction() {
+  var x = document.getElementById("swapText");
+  if (x.innerHTML === "Hao Ye Chen") {
+    x.innerHTML = "Hao are you?";
+  } else {
+    x.innerHTML = "Hao";
+  }
+}
+//End of toggle & swap text function
+
+//Toggle function hide and shows of Phone & Email
 
 function togglePhone() {
   var x = document.getElementById("toggle-phone");
@@ -85,4 +96,4 @@ function toggleEmail() {
   }
 }
 
-//End of toggle function of Phone & Email
+//End of toggle function hide and shows of Phone & Email
