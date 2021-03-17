@@ -50,8 +50,8 @@
     <section class="home-section"  id="home">
         <div class="home-intro" class="demo">
 
-            <h1 class="home-h1">Hello, I'm <span class="home-span">Hao Ye Chen</span>.</h1>
-            <p class="home-p">I am currently studying as programmer at TEC Ballerup</p>
+            <h1>Hej, Mit navn er <span id="swapText" onclick="myFunction()">Hao Ye Chen</span>.</h1>
+            <p>Jeg studerer i øjeblikket som programmør hos TEC Ballerup</p>
             <a class="go-to-projects" href="#projects">View my projects</a>
             <a href="#scroll-to-about"><span></span></a>
             
@@ -63,7 +63,8 @@
         <div class="container">
             <div class="About">
                 <h2 class="title">About</h2>
-                
+                <h1>dada</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere, debitis.</p>
             </div>
         </div>
     </section>
@@ -86,10 +87,11 @@
 
     <!-- Contact -->
     <section class="contact-section"  id="contact">
-        <div class="container">
-            <div class="contact-left">
-                <h2 class="title">Contact</h2>
-                
+        <div class="row">
+            <h2 class="title">Contact</h2>
+            
+            <div class="column-right">
+
                 <form name="contact" method="POST" data-netlify="true">
                     <input type="hidden" name="form-name" value="contact">
                     <div class="fields">
@@ -119,7 +121,7 @@
                 </form>
             </div>
 
-            <div class="contact-right">
+            <div class="column-left">
                 <div class="contact-info">
                     <h3 onclick="togglePhone()" style="cursor: pointer;">Phone ▾</h3>
                     <p id="toggle-phone" style="display: none;">(+45) 60 81 33 87</p>
