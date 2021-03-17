@@ -56,7 +56,7 @@ header {
   position: relative;
   text-transform: uppercase;
   letter-spacing: 2px;
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: bold;
 }
 
@@ -124,7 +124,7 @@ header {
 .overlay a {
   padding: 8px;
   text-decoration: none;
-  font-size: 36px;
+  font-size: 2.5rem;
   color: #818181;
   display: block;
   transition: 0.3s;
@@ -148,7 +148,7 @@ header {
 /* Home section */
 .home-section {
   /* top, transparent black, faked with gradient */
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
     url("/img/background.jpg");
   /* The background image is resized to cover the entire container,
     even if it has to stretch the image or cut a little bit off one of the edges. */
@@ -175,18 +175,19 @@ header {
   /* The text content is centered. */
   text-align: center;
 
-/* End of home section */
-
-
-  /* padding:0 20px; */
+  padding:0 20px;
+  
 }
-.home-h1,
-.home-p {
-  color: white;
+.home-section h1,
+.home-section p {
+  color: #fff;
   font-weight: bold;
+  padding: 5px;
 }
-.home-span {
-  color: red;
+.home-section span {
+  color: #d80202;
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 /* Go-to-projects button */
@@ -276,7 +277,7 @@ header {
     opacity: 0;
   }
 }
-
+/* End of home section */
 
 /* Hover effect on scroll to about not working yet */
 
@@ -346,11 +347,14 @@ header {
   justify-content: center;
   align-items: center;
   color: #fff;
-}
-.field{
-  padding: 10px;
   
 }
+
+.field{
+  padding: 10px;
+}
+
+
 input[type=text], [type=email], textarea {
   width: 100%;
   background: #1e242c;
@@ -412,9 +416,10 @@ input[type=submit]:hover {
 .social-media-icons a{
   color: #fff;
   text-decoration: none;
+  
 }
 .fa {
-  margin: 10px;
+  margin: 15px;
 }
 
 .fa-facebook {
@@ -487,26 +492,90 @@ footer p {
   .main-nav{
     display: none;
   }
+  
 }
 
 @media only screen and (min-width: 768px) {
   .mobile-nav{
     display: none;
   }
-
+  .home-section h1{
+    font-size: 1.8rem;
+  }
+  .home-section p {
+    font-size: 1.3rem;
+  }
 
 }
 
-@media only screen and (min-width: 1080px) {
+@media only screen and (min-width: 1025px) {
   .mobile-nav{
     display: none;
+  }
+
+  /* Title */
+  .title{
+    font-size: 2.5rem;
+  }
+  /* End of title */
+
+  .home-section h1{
+    font-size: 2.3rem;
+  }
+  .home-section p {
+    font-size: 1.8rem;
   }
 }
 
-@media only screen and (min-width: 1450px) {
+@media only screen and (min-width: 1200px) {
+  /* Mobile nav */
   .mobile-nav{
     display: none;
   }
+  /* End of mobile nav */
+
+  /* Title */
+  .title{
+    font-size: 3rem;
+  }
+  /* End of title */
+
+  /* Home section */
+  .home-section h1{
+    font-size: 2.8rem;
+  }
+  .home-section p {
+    font-size: 2.3rem;
+  }
+  /* End of home section */
+
+  
+  /* Contact section */
+  .contact-section{
+    display: block;
+    width: 100%;
+    
+  }
+  input[type=submit] {
+    width: 104%;
+  }
+  .column-right {
+    float: right;
+    width: 40%;
+    margin-top: 6px;
+    padding: 20px;
+    margin-right: 10%;
+  }
+  .column-left {
+    float: left;
+    width: 30%;
+    margin-top: 6px;
+    padding: 20px;
+    margin-left: 10%;
+    font-size: 1.5rem;
+  }
+  /* End of contact section */
+  
 }
 
 /* End of media query */
