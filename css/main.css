@@ -184,6 +184,12 @@ header {
   font-weight: bold;
   padding: 5px;
 }
+.home-section h1{
+  font-size: 1.3rem;
+}
+.home-section p{
+  font-size: 1rem;
+}
 .home-section span {
   color: #d80202;
   text-decoration: underline;
@@ -203,6 +209,7 @@ header {
   display: inline-block;
   text-transform: uppercase;
   transition: background-color 0.5s ease-out;
+  margin-top: 30px;
 }
 .go-to-projects:hover,
 .go-to-projects:active {
@@ -306,7 +313,7 @@ header {
   /* This margin-top fixes the white gap between sections*/
   margin-top: 0;
   /* Padding-top makes navbar dont overlap title */
-  padding-top: 100px;
+  padding-top: 50px;
   font-size: 2rem;
   text-align: center;
   text-transform: uppercase;
@@ -338,7 +345,7 @@ header {
 
 /*End of projects section */
 
-/* Contaction section */
+/* Contact section */
 
 .contact-section {
   height: 100vh;
@@ -430,6 +437,7 @@ input[type=submit]:hover {
   -webkit-transition:.5s;
   transition: .5s;
   background-color: #282b34;
+  
 }
 .fa-facebook:hover {
   background-color: #3d5b99;
@@ -461,30 +469,27 @@ input[type=submit]:hover {
 }
 /* End of social media icons */
 
-/* End of contaction section */
+/* End of contact section */
 
 
 
 
 
 /* Footer */
-.center {
+.footer {
+  justify-content: center;
   text-align: center;
-  margin: auto;
-}
-.bg-dark {
   background: #444454;
   color: #f4f4f4;
-}
-footer {
   padding: 2.2rem;
-}
-footer p {
   margin: 0;
-  font-size: 1rem;
+  font-size: 0.7rem;
 }
 
 /* End of footer */
+
+
+
 
 /* Media query */
 
@@ -506,6 +511,9 @@ footer p {
     font-size: 1.3rem;
   }
 
+  .footer{
+    font-size: 0.8rem;
+  }
 }
 
 @media only screen and (min-width: 1025px) {
@@ -524,6 +532,11 @@ footer p {
   }
   .home-section p {
     font-size: 1.8rem;
+  }
+
+
+  .footer{
+    font-size: 0.9rem;
   }
 }
 
@@ -559,23 +572,34 @@ footer p {
   input[type=submit] {
     width: 104%;
   }
-  .column-right {
+  .contact-right {
     float: right;
     width: 40%;
     margin-top: 6px;
     padding: 20px;
     margin-right: 10%;
   }
-  .column-left {
+  .contact-left {
     float: left;
     width: 30%;
     margin-top: 6px;
     padding: 20px;
     margin-left: 10%;
-    font-size: 1.5rem;
   }
+  .contact-left h3{
+    font-size: 1.8rem;
+  }
+  .contact-left p, a{
+    font-size: 1.3rem;
+  }
+
+
   /* End of contact section */
   
+
+  .footer{
+    font-size: 1rem;
+  }
 }
 
 /* End of media query */
