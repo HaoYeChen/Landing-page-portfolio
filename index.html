@@ -51,7 +51,7 @@
         <div class="home-intro" class="demo">
 
             <h1>Hej, Mit navn er <span id="swapText" onclick="myFunction()">Hao Ye Chen</span>.</h1>
-            <p>Jeg studerer i øjeblikket som programmør hos TEC Ballerup</p>
+            <p>Jeg søger elevplads!</p>
             <a class="go-to-projects" href="#projects">View my projects</a>
             <a href="#scroll-to-about"><span></span></a>
             
@@ -60,12 +60,72 @@
 
     <!-- About -->
     <section class="about-section" id="scroll-to-about">
-        <div class="container">
-            <div class="About">
+        
+        <div class="container-about">
+
+            <div class="profile">
+
                 <h2 class="title">About</h2>
-                <h1>dada</h1>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere, debitis.</p>
+                
+                <div class="flex-item-picture">
+                    <img src="/img/person.jpg" alt="">
+                </div>
+                
+                <div class="flex-item-about-me">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem reiciendis placeat consectetur amet, expedita consequuntur.</p>
+                </div>
+
+                <a href="CV/CV - Hao Ye Chen.pdf" class="download-cv-button">Download CV</a>
+
             </div>
+
+
+            <div class="columns">
+                <div class="flex-item-1">
+                    <h3>Personlige Kompetencer</h3>
+
+                    
+
+                </div>
+                <div class="flex-item-2">
+                    <h3>Front End</h3>
+
+                    <p>hvorfor frontend</p>
+
+                    <p>programmeringssprog, som jeg har erfaring:</p>
+                    
+                    <p>HTML, CSS, Javascript, Jquery, Angular</p>
+
+                    <p>Værktøjer</p>
+                    <ul>
+                        <li>Visual Studio Code</li>
+                        <li>Github</li>
+                        <li>Figma</li>
+                        <li>Draw.io</li>
+                    </ul>
+
+
+                </div>
+                <div class="flex-item-3">
+                    <h3>Back End</h3>
+
+                    <p>hvorfor Backend</p>
+
+                    <p>programmeringssprog, som jeg har erfaring:</p>
+                    
+                    <p>C#, Java</p>
+
+                    <p>Værktøjer</p>
+                    <ul>
+                        <li>Visual Studio</li>
+                        <li>Github</li>
+                        <li>Unity</li>
+                        <li>Eclipse</li>
+                        <li>Microsoft SQL</li>
+                    </ul>
+                </div>
+            </div>
+            
         </div>
     </section>
 
@@ -76,7 +136,7 @@
 
     <!-- Projects -->
     <section class="projects-section"  id="projects">
-        <div class="container">
+        <div class="">
             <div class="projects">
                 <h2 class="title">Projects</h2>
                 
@@ -87,9 +147,9 @@
 
     <!-- Contact -->
     <section class="contact-section"  id="contact">
-        
-        <div class="container">
-            <h2 class="title">Contact</h2>
+        <h2 class="title">Contact</h2>
+        <div class="container-contact">
+            
             
             
             <div class="contact-right">
@@ -125,15 +185,15 @@
 
             <div class="contact-left">
                 <div class="contact-info">
-                    <h3 onclick="togglePhone()" style="cursor: pointer;">Phone ▾</h3>
+                    <h3 onclick="togglePhone()" style="cursor: pointer;">Phone▾</h3>
                     <p id="toggle-phone" style="display: none;">(+45) 60 81 33 87</p>
                 </div>
                 <div class="contact-info">
-                    <h3 onclick="toggleEmail()" style="cursor: pointer;">Email ▾</h3>
+                    <h3 onclick="toggleEmail()" style="cursor: pointer;">Email▾</h3>
                     <a id="toggle-email" style="display: none;" class="contact-email" href="mailto:haoyechen@hotmail.com">haoyechen@hotmail.com</a>
                 </div>
                 <div class="contact-info">
-                    <h3>Social</h3>
+                    <h3>Social▾</h3>
                     <ul class="social-media-icons">
                         <li><a href="https://www.facebook.com/HaoYeChen/" class="fa fa-facebook"></a></li>
                         <li><a href="https://www.linkedin.com/in/hao-ye-chen-34bb08b4/" class="fa fa-linkedin"></a></li>
@@ -153,7 +213,7 @@
 
     <!-- Footer -->
     <footer class="footer">
-        <p>Hao Ye Chen &copy; 2021 - All Rights Reserved</p>
+        <p>Hao Ye Chen &copy; <script>document.write(new Date().getFullYear())</script> - All Rights Reserved</p>
     </footer>
 
 
