@@ -79,21 +79,22 @@ function myFunction() {
 
 //Toggle function hide and shows of Phone & Email
 
-function togglePhone() {
-  var x = document.getElementById("toggle-phone");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  }
-}
-function toggleEmail() {
-  var x = document.getElementById("toggle-email");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  }
-}
+//  function togglePhone() {
+//    var x = document.getElementById("toggle-phone");
+//    if (x.style.display === "none") {
+//      x.style.display = "block";
+//    } else {
+//      x.style.display = "none";
+//    }
+//  }
+//  function toggleEmail() {
+//    var x = document.getElementById("toggle-email");
+//    if (x.style.display === "none") {
+//      x.style.display = "block";
+//    } else {
+//      x.style.display = "none";
+//    }
+//  }
 
 //End of toggle function hide and shows of Phone & Email
+
