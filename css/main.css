@@ -416,7 +416,7 @@ header {
 /* Contact section */
 
 .contact-section {
-  height: 100vh;
+  height: 130vh;
   background-color: #282b34;
   display: flex;
   justify-content: center;
@@ -425,9 +425,9 @@ header {
   flex-direction: column;
   
 }
-.container-contact{
+/* .container-contact{
   margin-top: 30px;
-}
+} */
 
 .field{
   padding: 10px;
@@ -475,8 +475,20 @@ input[type=submit]:hover {
   
 }
 
+.contact-left{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 .contact-info{
   padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
 }
 .contact-email {
   text-decoration: none;
@@ -484,23 +496,26 @@ input[type=submit]:hover {
 }
 .contact-left h3{
   font-size: 1.3rem;
-  margin: 1rem;
+  margin: 15px;
 }
 .contact-info p{
   font-size: 1rem;
+  margin: 15px;
 }
 .contact-email{
   font-size: 1rem;
+  margin: 15px;
 }
 
 .social-media-icons{
   font-size: 1.3rem;
+  margin: 0px;
 }
 
 /* Social media icons */
 .social-media-icons{
   list-style-type: none;
-  
+  padding: 0px;
 }
 .social-media-icons li{
   vertical-align: top;
@@ -621,11 +636,13 @@ input[type=submit]:hover {
     font-size: 1.8rem;
   }
 
-
+  .contact-section {
+    height: 110vh;
+  }
   .container-contact{
-  display: flex;
-  flex-direction: row;
-  text-align: center;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
   }
   .contact-right {
     order: 2;
@@ -641,17 +658,20 @@ input[type=submit]:hover {
   }
   .contact-left h3{
     font-size: 1.6rem;
-    margin: 1rem;
+    margin: 15px;
   }
   .contact-info p{
     font-size: 1.3rem;
+    margin: 15px;
   }
   .contact-email{
     font-size: 1.3rem;
+    margin: 15px;
   }
 
   .social-media-icons{
     font-size: 1.3rem;
+    padding: 0px;
   }
 
   input[type=text], [type=email], textarea {
@@ -771,6 +791,7 @@ input[type=submit]:hover {
   .contact-left p, a{
     font-size: 1.3rem;
   } */
+
   .container-contact{
   display: flex;
   flex-direction: row;
@@ -779,24 +800,26 @@ input[type=submit]:hover {
   .contact-right {
     order: 2;
     padding: 10px;
-    margin: 70px;
+    margin: 100px;
     flex: 50%;
   }
   .contact-left {
     order: 1;
     padding: 10px;
-    margin: 70px;
+    margin: 100px;
     flex: 50%;
   }
   .contact-left h3{
     font-size: 1.6rem;
-    margin: 1rem;
+    margin: 5px;
   }
   .contact-info p{
     font-size: 1.3rem;
+    margin: 5px;
   }
   .contact-email{
     font-size: 1.3rem;
+    margin: 5px;
   }
 
   .social-media-icons{
