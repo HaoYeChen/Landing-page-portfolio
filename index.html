@@ -8,6 +8,18 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Browser tab logo -->
     <link rel="icon" href="/img/hao-logo.png">
+
+    <!-- Calculates the current age of me -->
+    <script>
+        function age() 
+        {
+            var birthday = new Date('1994-10-03');
+            var ageDifMs = Date.now() - birthday.getTime();
+            var ageDate = new Date(ageDifMs); // miliseconds from epoch
+            return Math.abs(ageDate.getUTCFullYear() - 1970);
+        }
+    </script>
+
 </head>
 <body>
     <!-- Navbar -->
@@ -51,12 +63,13 @@
         <div class="home-intro" class="demo">
 
             <h1>Hej, Mit navn er <span id="swapText" onclick="myFunction()">Hao Ye Chen</span>.</h1>
-            <p>Jeg søger elevplads!</p>
+            <p></p>
             <a class="go-to-projects" href="#projects">View my projects</a>
             <a href="#scroll-to-about"><span></span></a>
             
         </div>
     </section>
+
 
     <!-- About -->
     <section class="about-section" id="scroll-to-about">
@@ -72,7 +85,7 @@
                 </div>
                 
                 <div class="flex-item-about-me">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem reiciendis placeat consectetur amet, expedita consequuntur.</p>
+                    <p>Jeg er <script>document.write(age());</script> år</p>
                 </div>
 
                 <a href="CV/Hao Ye Chen - CV.pdf" class="download-cv-button">Download CV</a>
@@ -213,7 +226,7 @@
 
     <!-- Footer -->
     <footer class="footer">
-        <p>Hao Ye Chen &copy; <script>document.write(new Date().getFullYear())</script> - All Rights Reserved</p>
+        <p>Hao Ye Chen &copy; 2018 - <script>document.write(new Date().getFullYear())</script> - All Rights Reserved</p>
     </footer>
 
 
