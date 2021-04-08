@@ -516,7 +516,7 @@ input[type=submit]:hover {
 }
 
 .fa-facebook {
-  padding:10px 14px;
+  padding:10px 16px;
   -o-transition:.5s;
   -ms-transition:.5s;
   -moz-transition:.5s;
@@ -571,6 +571,7 @@ input[type=submit]:hover {
   margin: 0;
   font-size: 0.7rem;
 }
+
 
 /* End of footer */
 
