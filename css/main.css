@@ -341,12 +341,18 @@ header {
   justify-content: center;
 }
 /* image of me */
-.profile img{
+.profile-picture img{
   border-radius: 50%;
   width: 200px;
 }
-.flex-item-about-me{
+.about-me{
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 400px;
+  line-height: 1.8;
+  font-weight: bold;
+  font-size: calc(10px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
 }
 
 
@@ -429,13 +435,20 @@ header {
   margin-top: 30px;
 } */
 
+.contact-right{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 .field{
   padding: 10px;
 }
 
 
 input[type=text], [type=email], textarea {
-  width: 100%;
+  width: 90%;
   background: #1e242c;
   padding: 12px;
   border: 1px solid #1e242c;
@@ -447,7 +460,7 @@ input[type=text], [type=email], textarea {
 
 /* input */
 input[type=file] {
-  width: 98%;
+  width: 88%;
   color: #fff;
   border: 1px dashed rgba(255, 255, 255, 0.4);
   border-style: dashed;
@@ -465,7 +478,7 @@ input[type=submit] {
   display: inline-block;
   text-transform: uppercase;
   transition: background-color 0.5s ease-out;
-  width: 109%;
+  width: 100%;
   
 }
 
@@ -629,6 +642,16 @@ input[type=submit]:hover {
   }
   /* End of title */
 
+
+  /* About section */
+
+  .about-me{
+    width: 1000px;
+  }
+
+
+  /* End of about section */
+
   .home-section h1{
     font-size: 2.3rem;
   }
@@ -734,6 +757,10 @@ input[type=submit]:hover {
     
   }
 
+  .about-me{
+    width: 1100px;
+  }
+
   .flex-item-1 {
     background-color: #f1f1f1;
     padding: 10px;
@@ -762,6 +789,7 @@ input[type=submit]:hover {
 /* End of about section */
 
   
+
   /* Contact section */
   /* .contact-section{
     display: block;
@@ -793,9 +821,9 @@ input[type=submit]:hover {
   } */
 
   .container-contact{
-  display: flex;
-  flex-direction: row;
-  text-align: center;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
   }
   .contact-right {
     order: 2;
@@ -811,15 +839,15 @@ input[type=submit]:hover {
   }
   .contact-left h3{
     font-size: 1.6rem;
-    margin: 5px;
+    margin: 15px;
   }
   .contact-info p{
     font-size: 1.3rem;
-    margin: 5px;
+    margin: 15px;
   }
   .contact-email{
     font-size: 1.3rem;
-    margin: 5px;
+    margin: 15px;
   }
 
   .social-media-icons{
@@ -849,6 +877,28 @@ input[type=submit]:hover {
 
   .footer{
     font-size: 1rem;
+  }
+
+}
+@media only screen and (min-width: 1300px){
+  .about-me{
+    width: 1200px;
+  }
+}
+@media only screen and (min-width: 1400px){
+  .about-me{
+    width: 1300px;
+  }
+}
+@media only screen and (min-width: 1500px){
+  .about-me{
+    width: 1400px;
+  }
+}
+
+@media only screen and (min-width: 1600px){
+  .about-me{
+    width: 1500px;
   }
 }
 
