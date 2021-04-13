@@ -158,7 +158,25 @@
         <div class="">
             <div class="projects">
                 <h2 class="title">Projects</h2>
-                
+            
+                <div class="filter">
+                    <ul>
+                        <li class="list active" data-filter="all">All</li>
+                        <li class="list" data-filter="mobile">Mobile</li>
+                        <li class="list" data-filter="camera">Camera</li>
+                        <li class="list" data-filter="watch">Watch</li>
+                        <li class="list" data-filter="shoe">Shoe</li>
+                        <li class="list" data-filter="headphone">Headphone</li>
+                      </ul>
+                      <div class="product">
+                          <div class="itemBox mobile"><img src="/img/mobile1.jpg"></div>
+                          <div class="itemBox camera"><img src="/img/camera1.jpg"></div>
+                          <div class="itemBox watch"><img src="/img/watch1.jpg"></div>
+                          <div class="itemBox shoe"><img src="/img/shoe1.jpg"></div>
+                          <div class="itemBox headphone"><img src="/img/headphone1.jpg"></div>
+                          
+                      </div>
+                </div>
 
                 
         </div>
@@ -250,7 +268,28 @@
 
     <!-- jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>    
-
     <script src="javascript/main.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+          $('.list').click(function(){
+            const value = $(this).attr('data-filter');
+            if (value == 'all'){
+              $('.itemBox').show('1000');
+            }
+            else{
+              $('.itemBox').not('.'+value).hide('1000');
+              $('.itemBox').filter('.'+value).show('1000');
+            }
+          })
+    
+          //add active class on selected item
+          $('.list').click(function(){
+            $(this).addClass('active').siblings().removeClass('active');
+          })
+    
+    
+        })
+      </script>
 </body>
 </html>
