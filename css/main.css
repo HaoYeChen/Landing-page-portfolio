@@ -351,10 +351,16 @@ header {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  width: 400px;
+  /* width: 400px; */
   line-height: 1.8;
   font-weight: bold;
-  font-size: calc(10px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+  font-size: clamp(1rem, 2vw, 2rem);
+  padding-right: 5%;
+  padding-left: 5%;
+
+  /* calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - 
+  [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width]))); */
+  /* font-size: calc(10px + (26 - 14) * ((100vw - 400px) / (1600 - 300))); */
 }
 
 
@@ -416,8 +422,8 @@ header {
   background-color: #f5f5f5;
 }
 .filter{
-  padding: 20px;
-  width: 100%;
+  /* padding: 20px; */
+  width: 100%; 
   margin: 40px auto;
 }
 
@@ -452,8 +458,8 @@ header {
 
 .product .itembox{
   position: relative;
-  width: 300px;
-  height: 300px;
+
+  
   margin: 5px;
 }
 .product .itembox img{
@@ -465,7 +471,10 @@ header {
   object-fit: cover;
 }
 
-
+.images{
+  width: 300px;
+  display: block; /*or vertical-align:bottom; to fix the 4px gap between images*/
+}
 
 
 
@@ -702,9 +711,9 @@ input[type=submit]:hover {
 
   /* About section */
 
-  .about-me{
+  /* .about-me{
     width: 1000px;
-  }
+  } */
 
 
   /* End of about section */
@@ -814,9 +823,9 @@ input[type=submit]:hover {
     
   }
 
-  .about-me{
+  /* .about-me{
     width: 1100px;
-  }
+  } */
 
   .flex-item-1 {
     background-color: #f1f1f1;
@@ -937,7 +946,7 @@ input[type=submit]:hover {
   }
 
 }
-@media only screen and (min-width: 1300px){
+/* @media only screen and (min-width: 1300px){
   .about-me{
     width: 1200px;
   }
@@ -957,6 +966,6 @@ input[type=submit]:hover {
   .about-me{
     width: 1500px;
   }
-}
+} */
 
 /* End of media query */
