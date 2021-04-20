@@ -43,10 +43,10 @@
         <!-- <a href="#home" class="site-logo" aria-label="homepage">豪</a> -->
         <span class="hamburger-menu-icon" onclick="openNav()">&#9776;</span>
         
-            <div id="hamburger" class="overlay">
+            <div id="hamburger" class="overlay-menu">
                 <div class="closebtn" onclick="closeNav()">&times;</div>
                 
-                <div class="overlay-content">
+                <div class="overlay-menu-content">
                         <li class="nav-list-item"><a href="#home" class="nav-link" onclick="closeNav()">Home</a></li>
                         <li class="nav-list-item"><a href="#scroll-to-about" class="nav-link" onclick="closeNav()">About</a></li>
                         <li class="nav-list-item"><a href="#projects" class="nav-link" onclick="closeNav()">Projects</a></li>
@@ -99,7 +99,7 @@
             </div>
 
 
-            <!-- <div class="columns">
+            <div class="columns">
                 <div class="flex-item-1">
                     <h3>Personlige Kompetencer</h3>
 
@@ -143,7 +143,7 @@
                         <li>Microsoft SQL</li>
                     </ul>
                 </div>
-            </div> -->
+            </div>
             
         </div>
     </section>
@@ -162,20 +162,24 @@
                 <div class="filter">
                     <ul>
                         <li class="list active" data-filter="all">All</li>
-                        <li class="list" data-filter="C-Sharp">C#</li>
-                        <li class="list" data-filter="camera">Camera</li>
-                        <li class="list" data-filter="watch">Watch</li>
-                        <li class="list" data-filter="shoe">Shoe</li>
-                        <li class="list" data-filter="headphone">Headphone</li>
+                        <li class="list" data-filter="c-sharp">C#</li>
+                        <li class="list" data-filter="front-end">Front-End</li>
+                        <li class="list" data-filter="java">Java</li>
+
+                        
                       </ul>
                       <div class="product">
-                          <!-- reminder: image size 500x500 -->
-                          <div class="itemBox C-Sharp"><a href="https://github.com/HaoYeChen/TileVania-Unity" target="_blank"><img class="images" src="/img/tilevaina-unity.PNG"></a></div>
-                          <div class="itemBox C-Sharp"><a href="https://github.com/HaoYeChen/Rogue-Like-Unity" target="_blank"><img class="images" src="/img/roguelike-unity.PNG"></a></div>
-                          <div class="itemBox camera"><img class="images" src="/img/camera1.jpg"></div>
-                          <div class="itemBox watch"><img class="images" src="/img/watch1.jpg"></div>
-                          <div class="itemBox shoe"><img class="images" src="/img/shoe1.jpg"></div>
-                          <div class="itemBox headphone"><img class="images" src="/img/headphone1.jpg"></div>
+                        <!-- reminder: image size 500x500 -->
+                        <!-- C# -->
+                        <div class="itemBox c-sharp"><a href="https://github.com/HaoYeChen/TileVania-Unity" target="_blank">
+                            <img class="image" src="/img/tilevaina-unity.PNG"></a></div>
+                        <div class="itemBox c-sharp"><a href="https://github.com/HaoYeChen/Rogue-Like-Unity" target="_blank">
+                            <img class="image" src="/img/roguelike-unity.PNG"></a></div>
+                          
+                        <!-- Java -->
+                        <div class="itemBox java"><a href="https://github.com/HaoYeChen/PersonApiClient-Android-Studio-using-Retrofit-and-recyclerview" target="_blank">
+                            <img class="image" src="/img/PersonApiClient.png"></a></div>
+                          
                       </div>
                 </div>
 
