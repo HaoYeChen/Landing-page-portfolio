@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Zhi+Mang+Xing&display=swap");
 
+
+
 body {
   margin: 0;
   padding: 0;
@@ -101,7 +103,7 @@ header {
   top: 25px;
 }
 
-.overlay {
+.overlay-menu {
   height: 0%;
   width: 100%;
   position: fixed;
@@ -114,7 +116,7 @@ header {
   transition: 0.5s;
 }
 
-.overlay-content {
+.overlay-menu-content {
   position: relative;
   top: 25%;
   width: 100%;
@@ -123,7 +125,7 @@ header {
   list-style: none;
 }
 
-.overlay a {
+.overlay-menu a {
   padding: 8px;
   text-decoration: none;
   font-size: 2.5rem;
@@ -132,12 +134,12 @@ header {
   transition: 0.3s;
 }
 
-.overlay a:hover,
-.overlay a:focus {
+.overlay-menu a:hover,
+.overlay-menu a:focus {
   color: #f1f1f1;
 }
 
-.overlay .closebtn {
+.overlay-menu .closebtn {
   position: absolute;
   top: 15px;
   right: 45px;
@@ -454,6 +456,7 @@ header {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 .product .itembox{
@@ -471,11 +474,13 @@ header {
   object-fit: cover;
 }
 
-.images{
+.image{
   width: 300px;
-  display: block; /*or vertical-align:bottom; to fix the 4px gap between images*/
+  /*  or vertical-align:bottom; to fix the 4px gap between images */
+  display: block;
+  border-radius: 30px;
+  padding: 10px;
 }
-
 
 
 
