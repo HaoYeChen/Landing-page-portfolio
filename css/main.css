@@ -1,7 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Zhi+Mang+Xing&display=swap");
 
-
-
 body {
   margin: 0;
   padding: 0;
@@ -9,7 +7,9 @@ body {
   box-sizing: border-box;
 }
 
-/* Logo */
+/* ###########################################
+                    Logo
+############################################## */
 
 .site-logo {
   font-family: "Zhi Mang Xing", cursive;
@@ -22,9 +22,9 @@ body {
   border-radius: 50%;
 }
 
-/* End of logo */
-
-/* Desktop navigation */
+/* ###########################################
+            Desktop navigation
+############################################## */
 
 header {
   --text: #f4f4f4;
@@ -91,9 +91,9 @@ header {
   box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
 }
 
-/* End of desktop navigation*/
-
-/* Hamburger menu navigation */
+/* ###########################################
+          Hamburger menu navigation
+############################################## */
 
 .hamburger-menu-icon {
   font-size: 30px;
@@ -147,9 +147,11 @@ header {
   cursor: pointer;
 }
 
-/* End of hamburger menu navigation */
 
-/* Home section */
+/* ###########################################
+                  Home section 
+############################################## */
+
 .home-section {
   /* top, transparent black, faked with gradient */
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
@@ -190,7 +192,8 @@ header {
 
 }
 .home-section h1{
-  font-size: 1.3rem;
+  /* font-size: 1.3rem; */
+  font-size: calc(32px + (26 - 16) * ((100vw - 400px) / (1600 - 300)));;
 }
 .home-section p{
   font-size: 1rem;
@@ -222,7 +225,6 @@ header {
   color: black;
 }
 
-/* End of go-to-projects button */
 
 /* Animation scroll button */
 .home-intro a {
@@ -289,7 +291,6 @@ header {
     opacity: 0;
   }
 }
-/* End of home section */
 
 /* Hover effect on scroll to about not working yet */
 
@@ -324,11 +325,10 @@ header {
   text-transform: uppercase;
 }
 
-/* End of H1 title */
 
-
-
-/* About section */
+/* ###########################################
+              About section
+############################################## */
 
 .about-section {
   height: 250vh;
@@ -356,13 +356,13 @@ header {
   /* width: 400px; */
   line-height: 1.8;
   font-weight: bold;
-  font-size: clamp(1rem, 2vw, 2rem);
-  padding-right: 5%;
-  padding-left: 5%;
+  /* font-size: clamp(1rem, 2vw, 2rem); */
+  padding-right: 15%;
+  padding-left: 15%;
 
   /* calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - 
   [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width]))); */
-  /* font-size: calc(10px + (26 - 14) * ((100vw - 400px) / (1600 - 300))); */
+  font-size: calc(16px + (26 - 16) * ((100vw - 400px) / (1600 - 300)));
 }
 
 
@@ -397,27 +397,24 @@ header {
 }
 
 .flex-item-1 {
-  background-color: #f1f1f1;
-  border: 1px solid red;
+
   flex: 33%;
-  border-radius: 15px 15px 0px 0px;
+
 }
 
 .flex-item-2 {
-  background-color: dodgerblue;
-  border: 1px solid red;
+
   flex: 33%;
 }
 .flex-item-3 {
-  background-color: yellow;
-  border: 1px solid red;
+
   flex: 33%;
-  border-radius: 0px 0px 15px 15px;
+
 }
 
-/* End of about section */
-
-/* Projects section */
+/* ###########################################
+              Projects section
+############################################## */
 
 .projects-section {
   height: 100vh;
@@ -461,8 +458,6 @@ header {
 
 .product .itembox{
   position: relative;
-
-  
   margin: 5px;
 }
 .product .itembox img{
@@ -480,6 +475,15 @@ header {
   display: block;
   border-radius: 30px;
   padding: 10px;
+  transform: scale(1);
+  transition: 1s;
+}
+
+.image:hover{
+  transform: scale(1.1);
+	z-index: 2;
+  transition: 1s;
+  opacity: 1;
 }
 
 
@@ -487,10 +491,9 @@ header {
 
 
 
-
-/*End of projects section */
-
-/* Contact section */
+/* ###########################################
+              Contact section
+############################################## */
 
 .contact-section {
   height: 130vh;
@@ -652,15 +655,12 @@ input[type=submit]:hover {
 .fa-github:hover {
   background-color: #5a32a3;
 }
-/* End of social media icons */
-
-/* End of contact section */
 
 
+/* ###########################################
+                  Footer
+############################################## */
 
-
-
-/* Footer */
 .footer {
   justify-content: center;
   text-align: center;
@@ -672,12 +672,10 @@ input[type=submit]:hover {
 }
 
 
-/* End of footer */
 
-
-
-
-/* Media query */
+/* ###########################################
+              Media query
+############################################## */
 
 @media only screen and (max-width: 768px) {
   .main-nav{
@@ -691,7 +689,7 @@ input[type=submit]:hover {
     display: none;
   }
   .home-section h1{
-    font-size: 1.8rem;
+    font-size: 2.4rem;
   }
   .home-section p {
     font-size: 1.3rem;
@@ -724,7 +722,7 @@ input[type=submit]:hover {
   /* End of about section */
 
   .home-section h1{
-    font-size: 2.3rem;
+    font-size: 2.7rem;
   }
   .home-section p {
     font-size: 1.8rem;
@@ -805,7 +803,7 @@ input[type=submit]:hover {
 
   /* Home section */
   .home-section h1{
-    font-size: 2.8rem;
+    font-size: 3rem;
   }
   .home-section p {
     font-size: 2.3rem;
