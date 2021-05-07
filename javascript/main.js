@@ -1,4 +1,6 @@
-// Main navbar
+/* ###########################################
+              Main navbar
+############################################## */
 const header = document.querySelector("header");
 const sectionOne = document.querySelector(".home-intro");
 
@@ -22,9 +24,10 @@ sectionOneOptions);
 
 sectionOneObserver.observe(sectionOne);
 
-// End of main navbar
+/* ###########################################
+              Hamburger menu
+############################################## */
 
-//Hamburger menu
 function openNav() {
   document.getElementById("hamburger").style.height = "100%";
 }
@@ -33,11 +36,9 @@ function closeNav() {
   document.getElementById("hamburger").style.height = "0%";
 }
 
-// End of hamburger menu
-
-
-
-//Smooth Scrolling
+/* ###########################################
+              Smooth Scrolling
+############################################## */
 
 $(document).ready(function(){
   // Add smooth scrolling to all links
@@ -63,30 +64,3 @@ $(document).ready(function(){
     } // End if
   });
 });
-
-//End of smooth scrolling
-
-
-//End of toggle & swap text function
-
-//Toggle function hide and shows of Phone & Email
-
-//  function togglePhone() {
-//    var x = document.getElementById("toggle-phone");
-//    if (x.style.display === "none") {
-//      x.style.display = "block";
-//    } else {
-//      x.style.display = "none";
-//    }
-//  }
-//  function toggleEmail() {
-//    var x = document.getElementById("toggle-email");
-//    if (x.style.display === "none") {
-//      x.style.display = "block";
-//    } else {
-//      x.style.display = "none";
-//    }
-//  }
-
-//End of toggle function hide and shows of Phone & Email
-
