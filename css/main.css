@@ -149,7 +149,7 @@ header {
 
 
 /* ###########################################
-                  Home section 
+                  Home section
 ############################################## */
 
 .home-section {
@@ -182,8 +182,15 @@ header {
   text-align: center;
 
   padding:0 20px;
-  
 }
+
+.home-section h1{
+  font-size: 2rem;
+}
+.home-section p{
+  font-size: 1rem;
+}
+
 .home-section h1,
 .home-section p {
   color: #fff;
@@ -191,13 +198,7 @@ header {
   padding: 15px;
 
 }
-.home-section h1{
-  /* font-size: 1.3rem; */
-  font-size: calc(32px + (26 - 16) * ((100vw - 400px) / (1600 - 300)));;
-}
-.home-section p{
-  font-size: 1rem;
-}
+
 .home-section span {
   color: #d80202;
   text-decoration: underline;
@@ -292,27 +293,6 @@ header {
   }
 }
 
-/* Hover effect on scroll to about not working yet */
-
-/* .demo a {
-  position: absolute;
-  bottom: 20px;
-  left: 50%;
-  z-index: 2;
-  display: inline-block;
-  -webkit-transform: translate(0, -50%);
-  transform: translate(0, -50%);
-  color: #fff;
-  font: normal 400 20px/1 "Josefin Sans", sans-serif;
-  letter-spacing: 0.1em;
-  text-decoration: none;
-  transition: opacity 0.3s;
-}
-.demo a:hover {
-  opacity: 0.5;
-} */
-/* End of animation scroll button */
-
 
 /* H1 title */
 .title{
@@ -335,7 +315,7 @@ header {
   background-color: #fff;
 }
 .container-about{
-  
+
 }
 
 .profile{
@@ -347,7 +327,7 @@ header {
 /* image of me */
 .profile-picture img{
   border-radius: 50%;
-  width: 200px;
+  width: 150px;
 }
 .about-me{
   text-align: center;
@@ -360,7 +340,7 @@ header {
   padding-right: 15%;
   padding-left: 15%;
 
-  /* calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - 
+  /* calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw -
   [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width]))); */
   font-size: calc(16px + (26 - 16) * ((100vw - 400px) / (1600 - 300)));
 }
@@ -393,7 +373,7 @@ header {
   text-align: center;
   height: 300px;
   margin: 40px;
-  
+
 }
 
 .flex-item-1 {
@@ -417,12 +397,13 @@ header {
 ############################################## */
 
 .projects-section {
-  height: 100vh;
+  height: 230vh;
   background-color: #f5f5f5;
 }
+
+/* Filter */
 .filter{
-  /* padding: 20px; */
-  width: 100%; 
+  width: 100%;
   margin: 40px auto;
 }
 
@@ -448,6 +429,7 @@ header {
   color: #fff;
 }
 
+/* Images of projects */
 .product{
   display: flex;
   flex-wrap: wrap;
@@ -456,38 +438,104 @@ header {
   position: relative;
 }
 
-.product .itembox{
+.box{
   position: relative;
-  margin: 5px;
-}
-.product .itembox img{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 50%;
-  height: 50%;
-  object-fit: cover;
-}
-
-.image{
   width: 300px;
-  /*  or vertical-align:bottom; to fix the 4px gap between images */
-  display: block;
-  border-radius: 30px;
-  padding: 10px;
-  transform: scale(1);
-  transition: 1s;
+  height: 300px;
+  background:#000;
+  box-sizing: border-box;
+  overflow: hidden;
+  box-shadow: 0 5px 10px rgba(0,0,0,.8);
+  border-radius: 5%;
+  margin: 20px;
+}
+.box:before{
+  content: '';
+  position:absolute;
+  top: 30px;
+  left: 10px;
+  right: 10px;
+  bottom: 30px;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  box-sizing: border-box;
+  transition: .5s;
+  transform: scaleX(0);
+  opacity: 0;
+  z-index: 1;
 }
 
-.image:hover{
-  transform: scale(1.1);
-	z-index: 2;
-  transition: 1s;
+.box:hover:before{
+  transform: scaleX(1);
+  opacity: 1;
+}
+.box:after{
+  content: '';
+  position:absolute;
+  top: 10px;
+  left: 30px;
+  right: 30px;
+  bottom: 10px;
+  border-left: 1px solid #fff;
+  border-right: 1px solid #fff;
+  box-sizing: border-box;
+  transition: .5s;
+  transform: scaleY(0);
+  opacity: 0;
+  z-index: 1;
+}
+
+.box:hover:after{
+  transform: scaleY(1);
   opacity: 1;
 }
 
-
-
+.box .imgBox{
+  position: relative;
+}
+.box .imgBox img{
+  width: 100%;
+  transition: .5s;
+}
+.box:hover .imgBox img{
+  opacity: .2;
+  transform: scale(1.2);
+}
+.box .contentBox{
+  position:absolute;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  padding: 32px;
+  box-sizing: border-box;
+  text-align: center;
+}
+.box .contentBox h2{
+  margin: 0 0 30px;
+  padding: 0;
+  color: #fff;
+  transition: .5s;
+  transform: translateY(-50px);
+  opacity: 0;
+  visibility: hidden;
+}
+.box .contentBox p{
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  transition: .5s;
+  transform: translateY(50px);
+  opacity: 0;
+  visibility: hidden;
+}
+.box:hover .contentBox h2,
+.box:hover .contentBox p{
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0px);
+  transition-delay: .2s;
+}
 
 
 
@@ -503,7 +551,7 @@ header {
   align-items: center;
   color: #fff;
   flex-direction: column;
-  
+
 }
 /* .container-contact{
   margin-top: 30px;
@@ -553,13 +601,13 @@ input[type=submit] {
   text-transform: uppercase;
   transition: background-color 0.5s ease-out;
   width: 100%;
-  
+
 }
 
 input[type=submit]:hover {
   background-color: #fff;
   color: black;
-  
+
 }
 
 .contact-left{
@@ -575,7 +623,7 @@ input[type=submit]:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  
+
 }
 .contact-email {
   text-decoration: none;
@@ -611,7 +659,7 @@ input[type=submit]:hover {
 .social-media-icons a{
   color: #fff;
   text-decoration: none;
-  
+
 }
 .fa {
   margin: 15px;
@@ -625,7 +673,7 @@ input[type=submit]:hover {
   -webkit-transition:.5s;
   transition: .5s;
   background-color: #282b34;
-  
+
 }
 .fa-facebook:hover {
   background-color: #3d5b99;
@@ -681,7 +729,7 @@ input[type=submit]:hover {
   .main-nav{
     display: none;
   }
-  
+
 }
 
 @media only screen and (min-width: 768px) {
@@ -689,10 +737,14 @@ input[type=submit]:hover {
     display: none;
   }
   .home-section h1{
-    font-size: 2.4rem;
+    font-size: 3rem;
   }
   .home-section p {
     font-size: 1.3rem;
+  }
+
+  .projects-section {
+    height: 130vh;
   }
 
   .footer{
@@ -714,18 +766,21 @@ input[type=submit]:hover {
 
   /* About section */
 
-  /* .about-me{
-    width: 1000px;
-  } */
+
 
 
   /* End of about section */
 
   .home-section h1{
-    font-size: 2.7rem;
+    font-size: 4rem;
   }
   .home-section p {
     font-size: 1.8rem;
+  }
+
+
+  .projects-section {
+    height: 100vh;
   }
 
   .contact-section {
@@ -768,19 +823,19 @@ input[type=submit]:hover {
 
   input[type=text], [type=email], textarea {
     width: 135%;
-    
+
   }
-  
+
   /* input */
   input[type=file] {
     width: 133%;
-    
+
   }
-  
+
   input[type=submit] {
-    
+
     width: 145%;
-    
+
   }
 
   .footer{
@@ -803,7 +858,7 @@ input[type=submit]:hover {
 
   /* Home section */
   .home-section h1{
-    font-size: 3rem;
+    font-size: 5rem;
   }
   .home-section p {
     font-size: 2.3rem;
@@ -823,7 +878,7 @@ input[type=submit]:hover {
     text-align: center;
     padding: 100px;
     height: 300px;
-    
+
   }
 
   /* .about-me{
@@ -835,7 +890,7 @@ input[type=submit]:hover {
     padding: 10px;
     flex: 20%;
   }
-  
+
   .flex-item-2 {
     background-color: dodgerblue;
     padding: 10px;
@@ -857,13 +912,13 @@ input[type=submit]:hover {
 
 /* End of about section */
 
-  
+
 
   /* Contact section */
   /* .contact-section{
     display: block;
     width: 100%;
-    
+
   }
   input[type=submit] {
     width: 104%;
@@ -925,24 +980,24 @@ input[type=submit]:hover {
 
   input[type=text], [type=email], textarea {
     width: 150%;
-    
+
   }
-  
+
   /* input */
   input[type=file] {
     width: 148%;
-    
+
   }
-  
+
   input[type=submit] {
-    
+
     width: 160%;
-    
+
   }
 
 
   /* End of contact section */
-  
+
 
   .footer{
     font-size: 1rem;
