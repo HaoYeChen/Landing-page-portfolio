@@ -397,8 +397,9 @@ header {
 ############################################## */
 
 .projects-section {
-  height: 230vh;
-  background-color: #f5f5f5;
+  height: 280vh;
+  /* background-color: #f5f5f5; */
+  margin: 130px;
 }
 
 /* Filter */
@@ -743,12 +744,17 @@ input[type=submit]:hover {
     font-size: 1.3rem;
   }
 
-  .projects-section {
-    height: 130vh;
-  }
+  /* .projects-section {
+    height: 280vh;
+  } */
 
   .footer{
     font-size: 0.8rem;
+  }
+}
+@media only screen and (min-width: 940px){
+  .projects-section {
+    height: 180vh;
   }
 }
 
@@ -776,11 +782,6 @@ input[type=submit]:hover {
   }
   .home-section p {
     font-size: 1.8rem;
-  }
-
-
-  .projects-section {
-    height: 100vh;
   }
 
   .contact-section {
@@ -842,8 +843,13 @@ input[type=submit]:hover {
     font-size: 0.9rem;
   }
 }
+@media only screen and (min-width: 1280px){
+  .projects-section {
+    height: 130vh;
+  }
+}
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1300px) {
   /* Mobile nav */
   .mobile-nav{
     display: none;
@@ -866,7 +872,7 @@ input[type=submit]:hover {
   .go-to-projects{
     font-size: 1.3rem;
   }
-  /* End of home section */
+
 
 
   /* About section */
@@ -881,9 +887,7 @@ input[type=submit]:hover {
 
   }
 
-  /* .about-me{
-    width: 1100px;
-  } */
+
 
   .flex-item-1 {
     background-color: #f1f1f1;
@@ -903,46 +907,11 @@ input[type=submit]:hover {
   }
 
 
-
-
-
-
-
-
-
-/* End of about section */
-
-
-
-  /* Contact section */
-  /* .contact-section{
-    display: block;
-    width: 100%;
-
-  }
-  input[type=submit] {
-    width: 104%;
-  }
-  .contact-right {
-    float: right;
-    width: 40%;
-    margin-top: 6px;
-    padding: 20px;
-    margin-right: 10%;
-  }
-  .contact-left {
-    float: left;
-    width: 30%;
-    margin-top: 6px;
-    padding: 20px;
-    margin-left: 10%;
-  }
-  .contact-left h3{
-    font-size: 1.8rem;
-  }
-  .contact-left p, a{
-    font-size: 1.3rem;
+  /* .projects-section {
+    height: 100vh;
   } */
+
+
 
   .container-contact{
     display: flex;
@@ -996,34 +965,23 @@ input[type=submit]:hover {
   }
 
 
-  /* End of contact section */
-
+/* Footer */
 
   .footer{
     font-size: 1rem;
   }
 
 }
-/* @media only screen and (min-width: 1300px){
-  .about-me{
-    width: 1200px;
-  }
-}
-@media only screen and (min-width: 1400px){
-  .about-me{
-    width: 1300px;
-  }
-}
-@media only screen and (min-width: 1500px){
-  .about-me{
-    width: 1400px;
+
+@media only screen and (min-width: 1620px){
+.projects-section {
+    height: 130vh;
   }
 }
 
-@media only screen and (min-width: 1600px){
-  .about-me{
-    width: 1500px;
+@media only screen and (min-width: 1900px){
+  .projects-section {
+      height: 100vh;
+    }
   }
-} */
-
-/* End of media query */
+  
