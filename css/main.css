@@ -457,8 +457,8 @@ span{
 
 .box{
   position: relative;
-  width: 100px;
-  height: 100px;
+  width: 300px;
+  height: auto;
   background:#000;
   box-sizing: border-box;
   overflow: hidden;
