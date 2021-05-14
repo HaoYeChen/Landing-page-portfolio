@@ -311,8 +311,8 @@ header {
 ############################################## */
 
 .about-section {
-  height: 250vh;
-  background-color: #fff;
+  height: 320vh;
+  background-color: red;
 }
 .container-about{
 
@@ -377,30 +377,34 @@ header {
 }
 
 .flex-item-1 {
-
-  flex: 33%;
-
+  flex: 50%;
 }
 
 .flex-item-2 {
-
-  flex: 33%;
-}
-.flex-item-3 {
-
-  flex: 33%;
-
+  flex: 50%;
 }
 
 ul{
   list-style: none;
-  
 }
 
+span{
+  display: inline-block;
+}
+
+.columns table{
+  margin-left: auto;
+	margin-right: auto;
+  
+}
+.columns table, tr, td{
+  padding: 10px;
+}
 
 .svg-icon{
-  width: 30px;
-  padding: 0 10px 0 0;
+  width: 50px;
+  vertical-align: middle;
+  margin-right: 100px;
 }
 
 /* ###########################################
@@ -408,7 +412,7 @@ ul{
 ############################################## */
 
 .projects-section {
-  height: 280vh;
+  height: 250vh;
   /* background-color: #f5f5f5; */
   margin: 130px;
 }
@@ -765,7 +769,7 @@ input[type=submit]:hover {
 }
 @media only screen and (min-width: 940px){
   .projects-section {
-    height: 180vh;
+    height: 160vh;
   }
 }
 
@@ -856,7 +860,7 @@ input[type=submit]:hover {
 }
 @media only screen and (min-width: 1280px){
   .projects-section {
-    height: 130vh;
+    height: 120vh;
   }
 }
 
@@ -888,6 +892,10 @@ input[type=submit]:hover {
 
   /* About section */
 
+  .about-section {
+    height: 230vh;
+  }
+
   .columns{
     display: flex;
     flex-direction: row;
@@ -895,34 +903,7 @@ input[type=submit]:hover {
     text-align: center;
     padding: 100px;
     height: 300px;
-
   }
-
-
-
-  .flex-item-1 {
-    background-color: #f1f1f1;
-    padding: 10px;
-    flex: 20%;
-  }
-
-  .flex-item-2 {
-    background-color: dodgerblue;
-    padding: 10px;
-    flex: 20%;
-  }
-  .flex-item-3 {
-    background-color: red;
-    padding: 10px;
-    flex: 20%;
-  }
-
-
-  /* .projects-section {
-    height: 100vh;
-  } */
-
-
 
   .container-contact{
     display: flex;
@@ -966,33 +947,23 @@ input[type=submit]:hover {
   /* input */
   input[type=file] {
     width: 148%;
-
   }
 
   input[type=submit] {
-
     width: 160%;
-
   }
 
 
 /* Footer */
-
   .footer{
     font-size: 1rem;
   }
 
 }
 
-@media only screen and (min-width: 1620px){
-.projects-section {
-    height: 130vh;
-  }
-}
-
 @media only screen and (min-width: 1900px){
   .projects-section {
       height: 100vh;
     }
-  }
+}
   
