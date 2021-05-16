@@ -72,8 +72,11 @@
 
     <!-- About -->
     <section class="about-section" id="scroll-to-about">
+        
+        <h2>About</h2>
+
         <div class="profile">
-            <h2>About</h2>
+            
                 <div class="profile-picture">
                     <img src="/img/hao.jpg" alt="">
                 </div>
@@ -275,10 +278,11 @@
 
     <!-- Projects -->
 <section class="projects-section"  id="projects">
+
+    <h2>Projects</h2>
+
     <div class="projects">
-        
-        <h2>Projects</h2>
-            
+           
         <div class="filter">
             <ul>
                 <li class="list active" data-filter="all">All</li>
@@ -361,30 +365,37 @@
 
         <h2>Contact</h2>
 
-        <div class="container-contact">
+        <div class="contact-container">
             
             <div class="contact-right">
                 <form name="contact" method="POST" data-netlify="true">
                     <input type="hidden" name="form-name" value="contact">
                     <div class="fields">
+
                         <div class="field">
                             <input type="text" name="name" id="name" placeholder="Name*" required/>
-                            
                         </div>
+
                         <div class="field">
                             <input type="email" name="email" id="email" placeholder="Email*" required/>
                             
                         </div>
                         <div class="field">
                             <textarea name="message" id="message" rows="7" placeholder="Message*" required></textarea>
-                            
                         </div>
+
+                        <div class="field">
+                            <p style="margin: 0; text-align: left;">Felter med * skal udfyldes</p>
+                        </div>
+
                         <div class="field">
                             <input type="file" name="myfile" id="myfile" rows="7" multiple>
                         </div>
+                        
                         <div class="field">
                             <div data-netlify-recaptcha="true"></div>
                         </div>
+
                         <div class="field submit-button">
                             <input type="submit" value="Send" class="button primary" />
                         </div>

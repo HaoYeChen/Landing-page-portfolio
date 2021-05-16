@@ -295,15 +295,15 @@ header {
 
 
 /* H1 title */
-.title{
+/* .title{ */
   /* This margin-top fixes the white gap between sections*/
-  margin-top: 0;
+  /* margin-top: 0; */
   /* Padding-top makes navbar dont overlap title */
-  padding-top: 50px;
+  /* padding-top: 50px;
   font-size: 2rem;
   text-align: center;
   text-transform: uppercase;
-}
+} */
 
 
 /* ###########################################
@@ -311,11 +311,17 @@ header {
 ############################################## */
 
 .about-section {
-  height: 320vh;
+  height: 290vh;
   background-color: red;
 }
-.container-about{
-
+.about-section h2{
+  /* This margin-top fixes the white gap between sections*/
+  margin-top: 0px;
+  /* Padding-top makes navbar dont overlap title */
+  padding-top: 150px;
+  font-size: 2rem;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .profile{
@@ -375,7 +381,14 @@ header {
   margin: 40px;
 
 }
+.columns h3{
+  font-size: 1.5rem;
+}
 
+.columns td{
+  font-size: 1.1rem;
+  font-weight: bold;
+}
 .flex-item-1 {
   flex: 50%;
 }
@@ -412,9 +425,18 @@ span{
 ############################################## */
 
 .projects-section {
-  height: 250vh;
-  /* background-color: #f5f5f5; */
-  margin: 130px;
+  height: 220vh;
+  background-color: pink;
+}
+
+.projects-section h2{
+  /* This margin-top fixes the white gap between sections*/
+  margin-top: 0px;
+  /* Padding-top makes navbar dont overlap title */
+  padding-top: 150px;
+  font-size: 2rem;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 /* Filter */
@@ -457,7 +479,7 @@ span{
 
 .box{
   position: relative;
-  width: 300px;
+  width: 250px;
   height: auto;
   background:#000;
   box-sizing: border-box;
@@ -465,6 +487,7 @@ span{
   box-shadow: 0 5px 10px rgba(0,0,0,.8);
   border-radius: 5%;
   margin: 20px;
+  
 }
 .box:before{
   content: '';
@@ -568,12 +591,19 @@ span{
   align-items: center;
   color: #fff;
   flex-direction: column;
-
 }
-/* .container-contact{
-  margin-top: 30px;
-} */
 
+.contact-section h2{
+  /* This margin-top fixes the white gap between sections*/
+  margin-top: 0;
+  /* Padding-top makes navbar dont overlap title */
+  padding-top: 50px;
+  font-size: 2rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* Right side */
 .contact-right{
   display: flex;
   justify-content: center;
@@ -627,6 +657,7 @@ input[type=submit]:hover {
 
 }
 
+/* Left side */
 .contact-left{
   display: flex;
   justify-content: center;
@@ -659,12 +690,12 @@ input[type=submit]:hover {
   margin: 15px;
 }
 
+/* Social media icons */
 .social-media-icons{
   font-size: 1.3rem;
   margin: 0px;
 }
 
-/* Social media icons */
 .social-media-icons{
   list-style-type: none;
   padding: 0px;
@@ -741,8 +772,18 @@ input[type=submit]:hover {
 /* ###########################################
               Media query
 ############################################## */
+@media only screen and (min-width: 580px){
+  .about-section {
+    height: 280vh;
+  }
+  .projects-section{
+    height: 150vh;
+  }
+}
 
 @media only screen and (max-width: 768px) {
+
+  /* Desktop navigation */
   .main-nav{
     display: none;
   }
@@ -750,9 +791,13 @@ input[type=submit]:hover {
 }
 
 @media only screen and (min-width: 768px) {
+
+  /* Mobile navigation */
   .mobile-nav{
     display: none;
   }
+
+  /* Home section */
   .home-section h1{
     font-size: 3rem;
   }
@@ -764,13 +809,17 @@ input[type=submit]:hover {
     height: 280vh;
   } */
 
+  /* Footer section */
   .footer{
     font-size: 0.8rem;
   }
 }
-@media only screen and (min-width: 940px){
+@media only screen and (min-width: 870px){
+  .about-section {
+    height: 280vh;
+  }
   .projects-section {
-    height: 160vh;
+    height: 110vh;
   }
 }
 
@@ -779,11 +828,6 @@ input[type=submit]:hover {
     display: none;
   }
 
-  /* Title */
-  .title{
-    font-size: 3rem;
-  }
-  /* End of title */
 
 
   /* About section */
@@ -803,7 +847,7 @@ input[type=submit]:hover {
   .contact-section {
     height: 110vh;
   }
-  .container-contact{
+  .contact-container{
     display: flex;
     flex-direction: row;
     text-align: center;
@@ -859,11 +903,6 @@ input[type=submit]:hover {
     font-size: 0.9rem;
   }
 }
-@media only screen and (min-width: 1280px){
-  .projects-section {
-    height: 120vh;
-  }
-}
 
 @media only screen and (min-width: 1300px) {
   /* Mobile nav */
@@ -872,11 +911,6 @@ input[type=submit]:hover {
   }
   /* End of mobile nav */
 
-  /* Title */
-  .title{
-    font-size: 3rem;
-  }
-  /* End of title */
 
   /* Home section */
   .home-section h1{
@@ -894,7 +928,7 @@ input[type=submit]:hover {
   /* About section */
 
   .about-section {
-    height: 230vh;
+    height: 200vh;
   }
 
   .columns{
@@ -962,7 +996,7 @@ input[type=submit]:hover {
 
 }
 
-@media only screen and (min-width: 1900px){
+@media only screen and (min-width: 1450px){
   .projects-section {
       height: 100vh;
     }
