@@ -417,7 +417,7 @@ span{
 .svg-icon{
   width: 50px;
   vertical-align: middle;
-  margin-right: 100px;
+  margin-right: 50px;
 }
 
 /* ###########################################
@@ -541,7 +541,7 @@ span{
   opacity: .2;
   transform: scale(1.2);
 }
-.box .contentBox{
+.box .descriptionBox{
   position:absolute;
   width: 100%;
   top: 50%;
@@ -551,7 +551,7 @@ span{
   box-sizing: border-box;
   text-align: center;
 }
-.box .contentBox h2{
+.box .descriptionBox h2{
   margin: 0 0 30px;
   padding: 0;
   color: #fff;
@@ -560,7 +560,7 @@ span{
   opacity: 0;
   visibility: hidden;
 }
-.box .contentBox p{
+.box .descriptionBox p{
   margin: 0;
   padding: 0;
   color: #fff;
@@ -569,8 +569,8 @@ span{
   opacity: 0;
   visibility: hidden;
 }
-.box:hover .contentBox h2,
-.box:hover .contentBox p{
+.box:hover .descriptionBox h2,
+.box:hover .descriptionBox p{
   opacity: 1;
   visibility: visible;
   transform: translateY(0px);
@@ -597,7 +597,7 @@ span{
   /* This margin-top fixes the white gap between sections*/
   margin-top: 0;
   /* Padding-top makes navbar dont overlap title */
-  padding-top: 50px;
+  padding-top: 0px;
   font-size: 2rem;
   text-align: center;
   text-transform: uppercase;
@@ -615,7 +615,7 @@ span{
   padding: 10px;
 }
 
-
+/* input */
 input[type=text], [type=email], textarea {
   width: 90%;
   background: #1e242c;
@@ -627,7 +627,6 @@ input[type=text], [type=email], textarea {
   outline: none;
 }
 
-/* input */
 input[type=file] {
   width: 88%;
   color: #fff;
@@ -648,13 +647,11 @@ input[type=submit] {
   text-transform: uppercase;
   transition: background-color 0.5s ease-out;
   width: 100%;
-
 }
 
 input[type=submit]:hover {
   background-color: #fff;
   color: black;
-
 }
 
 /* Left side */
