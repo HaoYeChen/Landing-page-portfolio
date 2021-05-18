@@ -597,7 +597,7 @@ span{
   /* This margin-top fixes the white gap between sections*/
   margin-top: 0;
   /* Padding-top makes navbar dont overlap title */
-  padding-top: 0px;
+  padding-top: 10px;
   font-size: 2rem;
   text-align: center;
   text-transform: uppercase;
