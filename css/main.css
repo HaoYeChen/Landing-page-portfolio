@@ -311,8 +311,10 @@ header {
 ############################################## */
 
 .about-section {
-  height: 290vh;
-  background-color: red;
+  /* height: 290vh;
+  background-color: red; */
+  height: 280h; /* Fallback for browsers that do not support Custom Properties */
+  height: calc(var(--vh, 1vh) * 280);
 }
 .about-section h2{
   /* This margin-top fixes the white gap between sections*/
@@ -426,7 +428,7 @@ span{
 
 .projects-section {
   height: 220vh;
-  background-color: pink;
+  height: calc(var(--vh, 1vh) * 220);
 }
 
 .projects-section h2{
@@ -585,6 +587,7 @@ span{
 
 .contact-section {
   height: 130vh;
+  height: calc(var(--vh, 1vh) * 130);
   background-color: #282b34;
   display: flex;
   justify-content: center;
@@ -771,10 +774,12 @@ input[type=submit]:hover {
 ############################################## */
 @media only screen and (min-width: 580px){
   .about-section {
-    height: 280vh;
+    height: 260vh;
+    height: calc(var(--vh, 1vh) * 260);
   }
   .projects-section{
     height: 150vh;
+    height: calc(var(--vh, 1vh) * 150);
   }
 }
 
@@ -813,10 +818,12 @@ input[type=submit]:hover {
 }
 @media only screen and (min-width: 870px){
   .about-section {
-    height: 280vh;
+    height: 260vh;
+    height: calc(var(--vh, 1vh) * 260);
   }
   .projects-section {
     height: 110vh;
+    height: calc(var(--vh, 1vh) * 110);
   }
 }
 
@@ -843,6 +850,7 @@ input[type=submit]:hover {
 
   .contact-section {
     height: 110vh;
+    height: calc(var(--vh, 1vh) * 110);
   }
   .contact-container{
     display: flex;
@@ -925,7 +933,8 @@ input[type=submit]:hover {
   /* About section */
 
   .about-section {
-    height: 200vh;
+    height: 190vh;
+    height: calc(var(--vh, 1vh) * 190);
   }
 
   .columns{
@@ -996,6 +1005,7 @@ input[type=submit]:hover {
 @media only screen and (min-width: 1450px){
   .projects-section {
       height: 100vh;
+      height: calc(var(--vh, 1vh) * 100);
     }
 }
   
