@@ -427,8 +427,8 @@ span{
 ############################################## */
 
 .projects-section {
-  height: 300vh;
-  height: calc(var(--vh, 1vh) * 300);
+  height: 250vh;
+  height: calc(var(--vh, 1vh) * 250);
   background-color:red;
 }
 
