@@ -185,7 +185,7 @@ header {
 }
 
 .home-section h1{
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 .home-section p{
   font-size: 1rem;
@@ -313,7 +313,7 @@ header {
 .about-section {
   /* height: 290vh;
   background-color: red; */
-  height: 280h; /* Fallback for browsers that do not support Custom Properties */
+  height: 280vh; /* Fallback for browsers that do not support Custom Properties */
   height: calc(var(--vh, 1vh) * 280);
 }
 .about-section h2{
@@ -429,6 +429,7 @@ span{
 .projects-section {
   height: 220vh;
   height: calc(var(--vh, 1vh) * 220);
+  background-color: red;
 }
 
 .projects-section h2{
@@ -774,12 +775,12 @@ input[type=submit]:hover {
 ############################################## */
 @media only screen and (min-width: 580px){
   .about-section {
-    height: 260vh;
-    height: calc(var(--vh, 1vh) * 260);
+    height: 270vh;
+    height: calc(var(--vh, 1vh) * 270);
   }
   .projects-section{
-    height: 150vh;
-    height: calc(var(--vh, 1vh) * 150);
+    height: 160vh;
+    height: calc(var(--vh, 1vh) * 160);
   }
 }
 
