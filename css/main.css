@@ -185,7 +185,7 @@ header {
 }
 
 .home-section h1{
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 .home-section p{
   font-size: 1rem;
@@ -313,8 +313,8 @@ header {
 .about-section {
   /* height: 290vh;
   background-color: red; */
-  height: 300vh; /* Fallback for browsers that do not support Custom Properties */
-  height: calc(var(--vh, 1vh) * 300);
+  height: 280h; /* Fallback for browsers that do not support Custom Properties */
+  height: calc(var(--vh, 1vh) * 280);
 }
 .about-section h2{
   /* This margin-top fixes the white gap between sections*/
@@ -381,7 +381,7 @@ header {
   text-align: center;
   height: 300px;
   margin: 40px;
-
+  
 }
 .columns h3{
   font-size: 1.5rem;
@@ -429,7 +429,6 @@ span{
 .projects-section {
   height: 220vh;
   height: calc(var(--vh, 1vh) * 220);
-  background-color: red;
 }
 
 .projects-section h2{
@@ -775,12 +774,12 @@ input[type=submit]:hover {
 ############################################## */
 @media only screen and (min-width: 580px){
   .about-section {
-    height: 290vh;
-    height: calc(var(--vh, 1vh) * 290);
+    height: 260vh;
+    height: calc(var(--vh, 1vh) * 260);
   }
   .projects-section{
-    height: 160vh;
-    height: calc(var(--vh, 1vh) * 160);
+    height: 150vh;
+    height: calc(var(--vh, 1vh) * 150);
   }
 }
 
@@ -819,8 +818,8 @@ input[type=submit]:hover {
 }
 @media only screen and (min-width: 870px){
   .about-section {
-    height: 280vh;
-    height: calc(var(--vh, 1vh) * 280);
+    height: 260vh;
+    height: calc(var(--vh, 1vh) * 260);
   }
   .projects-section {
     height: 110vh;
@@ -1004,6 +1003,10 @@ input[type=submit]:hover {
 }
 
 @media only screen and (min-width: 1450px){
+  .about-section {
+    height: 210vh;
+    height: calc(var(--vh, 1vh) * 210);
+  }
   .projects-section {
       height: 100vh;
       height: calc(var(--vh, 1vh) * 100);
