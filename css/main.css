@@ -313,8 +313,8 @@ header {
 .about-section {
   /* height: 290vh;
   background-color: red; */
-  height: 400vh; /* Fallback for browsers that do not support Custom Properties */
-  height: calc(var(--vh, 1vh) * 400);
+  height: 350vh; /* Fallback for browsers that do not support Custom Properties */
+  height: calc(var(--vh, 1vh) * 350);
 }
 .about-section h2{
   /* This margin-top fixes the white gap between sections*/
