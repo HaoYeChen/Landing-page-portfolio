@@ -5,21 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
     <title>Hao Ye Chen - Søger elevplads</title>
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Browser tab logo -->
     <link rel="icon" href="/img/hao-logo.png">
-
-    <!-- Calculates the current age of me -->
-    <script>
-        function age() 
-        {
-            var birthday = new Date('1994-10-03');
-            var ageDifMs = Date.now() - birthday.getTime();
-            var ageDate = new Date(ageDifMs); // miliseconds from epoch
-            return Math.abs(ageDate.getUTCFullYear() - 1970);
-        }
-    </script>
-
 </head>
 <body>
     <!-- Navbar -->
@@ -62,7 +49,7 @@
     <section class="home-section"  id="home">
         <div class="home-intro">
             <h1>Hao Ye Chen</h1>
-            <p>Jeg er igang med min uddannelse som datatekniker med speciale i programmering</p>
+            <p>Jeg er igang med min H5 som datatekniker med speciale i programmering</p>
             <a class="go-to-projects" href="#projects">View my projects</a>
             <a href="#scroll-to-about"><span></span></a>
             
@@ -458,5 +445,16 @@
           })
         })
       </script>
+
+      <!-- Calculates the current age of me -->
+    <script>
+        function age() 
+        {
+            var birthday = new Date('1994-10-03');
+            var ageDifMs = Date.now() - birthday.getTime();
+            var ageDate = new Date(ageDifMs); // miliseconds from epoch
+            return Math.abs(ageDate.getUTCFullYear() - 1970);
+        }
+    </script>
 </body>
 </html>
