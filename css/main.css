@@ -313,8 +313,8 @@ header {
 .about-section {
   /* height: 290vh;
   background-color: red; */
-  height: 360vh; /* Fallback for browsers that do not support Custom Properties */
-  height: calc(var(--vh, 1vh) * 360);
+  /* height: 300vh; Fallback for browsers that do not support Custom Properties */
+  height: calc(var(--vh, 1vh) * 290);
 }
 .about-section h2{
   /* This margin-top fixes the white gap between sections*/
@@ -427,8 +427,8 @@ span{
 ############################################## */
 
 .projects-section {
-  height: 270vh;
-  height: calc(var(--vh, 1vh) * 270);
+  /* height: 270vh; */
+  height: calc(var(--vh, 1vh) * 210);
   background-color:red;
 }
 
@@ -776,11 +776,11 @@ input[type=submit]:hover {
 ############################################## */
 @media only screen and (min-width: 580px){
   .about-section {
-    height: 260vh;
+    /* height: 260vh; */
     height: calc(var(--vh, 1vh) * 260);
   }
   .projects-section{
-    height: 140vh;
+    /* height: 140vh; */
     height: calc(var(--vh, 1vh) * 140);
   }
 }
@@ -821,11 +821,11 @@ input[type=submit]:hover {
 }
 @media only screen and (min-width: 870px){
   .about-section {
-    height: 260vh;
+    /* height: 260vh; */
     height: calc(var(--vh, 1vh) * 260);
   }
   .projects-section {
-    height: 110vh;
+    /* height: 110vh; */
     height: calc(var(--vh, 1vh) * 110);
   }
 }
@@ -936,7 +936,7 @@ input[type=submit]:hover {
   /* About section */
 
   .about-section {
-    height: 190vh;
+    /* height: 190vh; */
     height: calc(var(--vh, 1vh) * 190);
   }
 
@@ -1007,11 +1007,11 @@ input[type=submit]:hover {
 
 @media only screen and (min-width: 1450px){
   .about-section {
-    height: 190vh;
+    /* height: 190vh; */
     height: calc(var(--vh, 1vh) * 190);
   }
   .projects-section {
-      height: 100vh;
+      /* height: 100vh; */
       height: calc(var(--vh, 1vh) * 100);
     }
 }
