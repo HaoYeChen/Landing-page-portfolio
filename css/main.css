@@ -313,8 +313,8 @@ header {
 .about-section {
   /* height: 290vh;
   background-color: red; */
-  height: 320vh; /* Fallback for browsers that do not support Custom Properties */
-  height: calc(var(--vh, 1vh) * 320);
+  height: 270vh; /* Fallback for browsers that do not support Custom Properties */
+  height: calc(var(--vh, 1vh) * 270);
 }
 .about-section h2{
   /* This margin-top fixes the white gap between sections*/
@@ -427,8 +427,9 @@ span{
 ############################################## */
 
 .projects-section {
-  height: 250vh;
-  height: calc(var(--vh, 1vh) * 250);
+  height: 200vh;
+  height: calc(var(--vh, 1vh) * 200);
+  background-color:red;
 }
 
 .projects-section h2{
@@ -779,8 +780,8 @@ input[type=submit]:hover {
     height: calc(var(--vh, 1vh) * 260);
   }
   .projects-section{
-    height: 150vh;
-    height: calc(var(--vh, 1vh) * 150);
+    height: 140vh;
+    height: calc(var(--vh, 1vh) * 140);
   }
 }
 
@@ -809,7 +810,8 @@ input[type=submit]:hover {
   }
 
   /* .projects-section {
-    height: 280vh;
+    height: 140vh;
+    height: calc(var(--vh, 1vh) * 140);
   } */
 
   /* Footer section */
@@ -1007,7 +1009,6 @@ input[type=submit]:hover {
   .about-section {
     height: 190vh;
     height: calc(var(--vh, 1vh) * 190);
-    background-color:red;
   }
   .projects-section {
       height: 100vh;
