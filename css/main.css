@@ -313,8 +313,8 @@ header {
 .about-section {
   /* height: 290vh;
   background-color: red; */
-  height: 280vh; /* Fallback for browsers that do not support Custom Properties */
-  height: calc(var(--vh, 1vh) * 280);
+  height: 300vh; /* Fallback for browsers that do not support Custom Properties */
+  height: calc(var(--vh, 1vh) * 300);
 }
 .about-section h2{
   /* This margin-top fixes the white gap between sections*/
@@ -775,8 +775,8 @@ input[type=submit]:hover {
 ############################################## */
 @media only screen and (min-width: 580px){
   .about-section {
-    height: 270vh;
-    height: calc(var(--vh, 1vh) * 270);
+    height: 290vh;
+    height: calc(var(--vh, 1vh) * 290);
   }
   .projects-section{
     height: 160vh;
@@ -819,8 +819,8 @@ input[type=submit]:hover {
 }
 @media only screen and (min-width: 870px){
   .about-section {
-    height: 260vh;
-    height: calc(var(--vh, 1vh) * 260);
+    height: 280vh;
+    height: calc(var(--vh, 1vh) * 280);
   }
   .projects-section {
     height: 110vh;
