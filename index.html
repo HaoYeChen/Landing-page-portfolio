@@ -7,6 +7,16 @@
     <link rel="stylesheet" href="css/main.css">
     <!-- Browser tab logo -->
     <link rel="icon" href="/img/hao-logo.png">
+      <!-- Calculates the current age of me -->
+      <script>
+        function age() 
+        {
+            var birthday = new Date('1994-10-03');
+            var ageDifMs = Date.now() - birthday.getTime();
+            var ageDate = new Date(ageDifMs); // miliseconds from epoch
+            return Math.abs(ageDate.getUTCFullYear() - 1970);
+        }
+    </script>
 </head>
 <body>
     <!-- Navbar -->
@@ -445,16 +455,5 @@
           })
         })
       </script>
-
-      <!-- Calculates the current age of me -->
-    <script>
-        function age() 
-        {
-            var birthday = new Date('1994-10-03');
-            var ageDifMs = Date.now() - birthday.getTime();
-            var ageDate = new Date(ageDifMs); // miliseconds from epoch
-            return Math.abs(ageDate.getUTCFullYear() - 1970);
-        }
-    </script>
 </body>
 </html>

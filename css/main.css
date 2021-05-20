@@ -313,8 +313,8 @@ header {
 .about-section {
   /* height: 290vh;
   background-color: red; */
-  height: 280h; /* Fallback for browsers that do not support Custom Properties */
-  height: calc(var(--vh, 1vh) * 280);
+  height: 320vh; /* Fallback for browsers that do not support Custom Properties */
+  height: calc(var(--vh, 1vh) * 320);
 }
 .about-section h2{
   /* This margin-top fixes the white gap between sections*/
@@ -427,8 +427,8 @@ span{
 ############################################## */
 
 .projects-section {
-  height: 220vh;
-  height: calc(var(--vh, 1vh) * 220);
+  height: 250vh;
+  height: calc(var(--vh, 1vh) * 250);
 }
 
 .projects-section h2{
