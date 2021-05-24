@@ -765,34 +765,28 @@ input[type=submit]:hover {
 @media only screen and (min-width: 360px){
   .about-section {
     /* height: 260vh; */
-    height: calc(var(--vh, 1vh) * 280);
+    height: calc(var(--vh, 1vh) * 410);
   }
   .projects-section{
     /* height: 140vh; */
-    height: calc(var(--vh, 1vh) * 200);
-  }
-}
-@media only screen and (min-width: 360px){
-  .about-section {
-    /* height: 260vh; */
     height: calc(var(--vh, 1vh) * 290);
   }
-  .projects-section{
-    /* height: 140vh; */
-    height: calc(var(--vh, 1vh) * 210);
+  .contact-section{
+    height: calc(var(--vh, 1vh) * 180);
   }
 }
 
-@media only screen and (min-width: 580px){
-  .about-section {
+
+/* @media only screen and (min-width: 580px){
+  .about-section { */
     /* height: 260vh; */
-    height: calc(var(--vh, 1vh) * 260);
+    /* height: calc(var(--vh, 1vh) * 260);
   }
-  .projects-section{
+  .projects-section{ */
     /* height: 140vh; */
-    height: calc(var(--vh, 1vh) * 140);
+    /* height: calc(var(--vh, 1vh) * 140);
   }
-}
+} */
 
 @media only screen and (max-width: 768px) {
 
@@ -818,10 +812,17 @@ input[type=submit]:hover {
     font-size: 1.3rem;
   }
 
-  /* .projects-section {
-    height: 140vh;
-    height: calc(var(--vh, 1vh) * 140);
-  } */
+  .about-section {
+    /* height: 260vh; */
+    height: calc(var(--vh, 1vh) * 280);
+  }
+  .projects-section{
+    /* height: 140vh; */
+    height: calc(var(--vh, 1vh) * 150);
+  }
+  .contact-section{
+    height: calc(var(--vh, 1vh) * 120);
+  }
 
   /* Footer section */
   .footer{
@@ -834,6 +835,10 @@ input[type=submit]:hover {
     height: calc(var(--vh, 1vh) * 260);
   }
   .projects-section {
+    /* height: 110vh; */
+    height: calc(var(--vh, 1vh) * 100);
+  }
+  .contact-section {
     /* height: 110vh; */
     height: calc(var(--vh, 1vh) * 110);
   }
