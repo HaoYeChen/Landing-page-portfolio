@@ -776,25 +776,25 @@ input[type=submit]:hover {
   }
 }
 
-
-/* @media only screen and (min-width: 580px){
-  .about-section { */
+@media only screen and (min-width: 412px){
+  .about-section {
     /* height: 260vh; */
-    /* height: calc(var(--vh, 1vh) * 260);
+    height: calc(var(--vh, 1vh) * 370);
   }
-  .projects-section{ */
+  .projects-section{
     /* height: 140vh; */
-    /* height: calc(var(--vh, 1vh) * 140);
+    height: calc(var(--vh, 1vh) * 270);
   }
-} */
+  .contact-section{
+    height: calc(var(--vh, 1vh) * 160);
+  }
+}
 
 @media only screen and (max-width: 768px) {
-
   /* Desktop navigation */
   .main-nav{
     display: none;
   }
-
 }
 
 @media only screen and (min-width: 768px) {
