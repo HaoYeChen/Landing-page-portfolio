@@ -338,6 +338,7 @@ header {
   /* calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw -
   [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width]))); */
   font-size: calc(16px + (26 - 16) * ((100vw - 400px) / (1600 - 300)));
+  min-width: 250px;
 }
 
 
@@ -367,7 +368,7 @@ header {
   font-size: 30px;
   text-align: center;
   height: 300px;
-  margin: 5%;
+  margin: 5px;
   
 }
 .columns h3{
@@ -1003,7 +1004,7 @@ input[type=submit]:hover {
 @media only screen and (min-width: 1450px){
   .about-section {
     /* height: 190vh; */
-    height: calc(var(--vh, 1vh) * 190);
+    height: calc(var(--vh, 1vh) * 200);
   }
   .projects-section {
       /* height: 100vh; */
