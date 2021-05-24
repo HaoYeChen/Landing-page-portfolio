@@ -226,71 +226,7 @@ header {
   color: black;
 }
 
-/* Animation scroll button */
-.home-intro a {
-  padding-top: 100px;
-}
-.home-intro a span {
-  position: absolute;
-  /* top of scroll button */
-  top: 90%;
-  left: 50%;
-  width: 30px;
-  height: 50px;
-  margin-left: -15px;
-  border: 2px solid #fff;
-  border-radius: 50px;
-  box-sizing: border-box;
-  /* border-width property sets the width of an element's four borders. */
-  border-width: 2px;
-}
 
-.home-intro a span::before {
-  position: absolute;
-  top: 10px;
-  left: 50%;
-  content: "";
-  width: 6px;
-  height: 6px;
-  margin-left: -3px;
-  background-color: #fff;
-  border-radius: 100%;
-  -webkit-animation: scrollbutton 2s infinite;
-  animation: scrollbutton 2s infinite;
-  box-sizing: border-box;
-}
-@-webkit-keyframes scrollbutton {
-  0% {
-    -webkit-transform: translate(0, 0);
-    opacity: 0;
-  }
-  40% {
-    opacity: 1;
-  }
-  80% {
-    -webkit-transform: translate(0, 20px);
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-@keyframes scrollbutton {
-  0% {
-    transform: translate(0, 0);
-    opacity: 0;
-  }
-  40% {
-    opacity: 1;
-  }
-  80% {
-    transform: translate(0, 20px);
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
-}
 
 
 /* ###########################################
@@ -301,7 +237,7 @@ header {
   /* height: 290vh;
   background-color: red; */
   /* height: 300vh; Fallback for browsers that do not support Custom Properties */
-  height: calc(var(--vh, 1vh) * 600);
+  height: calc(var(--vh, 1vh) * 610);
 }
 .about-section h2{
   /* This margin-top fixes the white gap between sections*/
@@ -415,8 +351,7 @@ span{
 
 .projects-section {
   /* height: 270vh; */
-  height: calc(var(--vh, 1vh) * 420);
-  background-color:red;
+  height: calc(var(--vh, 1vh) * 430);
 }
 
 .projects-section h2{
@@ -576,7 +511,7 @@ span{
 
 .contact-section {
   height: 130vh;
-  height: calc(var(--vh, 1vh) * 250);
+  height: calc(var(--vh, 1vh) * 270);
   background-color: #282b34;
   display: flex;
   justify-content: center;
@@ -940,7 +875,71 @@ input[type=submit]:hover {
     font-size: 1.3rem;
   }
 
+/* Animation scroll button */
+.home-intro a {
+  padding-top: 100px;
+}
+.home-intro a span {
+  position: absolute;
+  /* top of scroll button */
+  top: 90%;
+  left: 50%;
+  width: 30px;
+  height: 50px;
+  margin-left: -15px;
+  border: 2px solid #fff;
+  border-radius: 50px;
+  box-sizing: border-box;
+  /* border-width property sets the width of an element's four borders. */
+  border-width: 2px;
+}
 
+.home-intro a span::before {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  content: "";
+  width: 6px;
+  height: 6px;
+  margin-left: -3px;
+  background-color: #fff;
+  border-radius: 100%;
+  -webkit-animation: scrollbutton 2s infinite;
+  animation: scrollbutton 2s infinite;
+  box-sizing: border-box;
+}
+@-webkit-keyframes scrollbutton {
+  0% {
+    -webkit-transform: translate(0, 0);
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    -webkit-transform: translate(0, 20px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes scrollbutton {
+  0% {
+    transform: translate(0, 0);
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    transform: translate(0, 20px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 
   /* About section */
 
@@ -958,6 +957,11 @@ input[type=submit]:hover {
   }
 
   .projects-section {
+    /* height: 100vh; */
+    height: calc(var(--vh, 1vh) * 130);
+  }
+
+  .contact-section {
     /* height: 100vh; */
     height: calc(var(--vh, 1vh) * 130);
   }
