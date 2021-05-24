@@ -784,10 +784,6 @@ input[type=submit]:hover {
     display: none;
   }
 
-
-
-
-
   .home-section h1{
     font-size: 4rem;
   }
@@ -836,19 +832,15 @@ input[type=submit]:hover {
 
   input[type=text], [type=email], textarea {
     width: 135%;
-
   }
 
   /* input */
   input[type=file] {
     width: 133%;
-
   }
 
   input[type=submit] {
-
     width: 145%;
-
   }
 
   .footer{
@@ -1030,6 +1022,16 @@ input[type=submit]:hover {
   .projects-section {
       /* height: 100vh; */
       height: calc(var(--vh, 1vh) * 100);
+    }
+    .contact-section {
+      /* height: 100vh; */
+      height: calc(var(--vh, 1vh) * 100);
+    }
+    .contact-section h2{
+
+      /* Padding-top makes navbar dont overlap title */
+      padding-top: 100px;
+
     }
 }
   
