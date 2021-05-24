@@ -301,7 +301,7 @@ header {
   /* height: 290vh;
   background-color: red; */
   /* height: 300vh; Fallback for browsers that do not support Custom Properties */
-  height: calc(var(--vh, 1vh) * 290);
+  height: calc(var(--vh, 1vh) * 600);
 }
 .about-section h2{
   /* This margin-top fixes the white gap between sections*/
@@ -338,7 +338,6 @@ header {
   /* calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw -
   [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width]))); */
   font-size: calc(16px + (26 - 16) * ((100vw - 400px) / (1600 - 300)));
-  min-width: 250px;
 }
 
 
@@ -368,7 +367,7 @@ header {
   font-size: 30px;
   text-align: center;
   height: 300px;
-  margin: 5px;
+  margin: 50px;
   
 }
 .columns h3{
@@ -416,7 +415,7 @@ span{
 
 .projects-section {
   /* height: 270vh; */
-  height: calc(var(--vh, 1vh) * 210);
+  height: calc(var(--vh, 1vh) * 420);
   background-color:red;
 }
 
@@ -577,7 +576,7 @@ span{
 
 .contact-section {
   height: 130vh;
-  height: calc(var(--vh, 1vh) * 130);
+  height: calc(var(--vh, 1vh) * 250);
   background-color: #282b34;
   display: flex;
   justify-content: center;
@@ -770,10 +769,19 @@ input[type=submit]:hover {
   }
   .projects-section{
     /* height: 140vh; */
+    height: calc(var(--vh, 1vh) * 200);
+  }
+}
+@media only screen and (min-width: 360px){
+  .about-section {
+    /* height: 260vh; */
+    height: calc(var(--vh, 1vh) * 290);
+  }
+  .projects-section{
+    /* height: 140vh; */
     height: calc(var(--vh, 1vh) * 210);
   }
 }
-
 
 @media only screen and (min-width: 580px){
   .about-section {
@@ -908,7 +916,7 @@ input[type=submit]:hover {
   }
 }
 
-@media only screen and (min-width: 1300px) {
+@media only screen and (min-width: 1280px) {
   /* Mobile nav */
   .mobile-nav{
     display: none;
@@ -933,7 +941,7 @@ input[type=submit]:hover {
 
   .about-section {
     /* height: 190vh; */
-    height: calc(var(--vh, 1vh) * 190);
+    height: calc(var(--vh, 1vh) * 230);
   }
 
   .columns{
@@ -941,8 +949,12 @@ input[type=submit]:hover {
     flex-direction: row;
     font-size: 30px;
     text-align: center;
-    padding: 100px;
     height: 300px;
+  }
+
+  .projects-section {
+    /* height: 100vh; */
+    height: calc(var(--vh, 1vh) * 130);
   }
 
   .container-contact{
