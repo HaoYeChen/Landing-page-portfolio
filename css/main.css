@@ -226,7 +226,6 @@ header {
   color: black;
 }
 
-
 /* Animation scroll button */
 .home-intro a {
   padding-top: 100px;
@@ -294,18 +293,6 @@ header {
 }
 
 
-/* H1 title */
-/* .title{ */
-  /* This margin-top fixes the white gap between sections*/
-  /* margin-top: 0; */
-  /* Padding-top makes navbar dont overlap title */
-  /* padding-top: 50px;
-  font-size: 2rem;
-  text-align: center;
-  text-transform: uppercase;
-} */
-
-
 /* ###########################################
               About section
 ############################################## */
@@ -314,7 +301,7 @@ header {
   /* height: 290vh;
   background-color: red; */
   /* height: 300vh; Fallback for browsers that do not support Custom Properties */
-  height: calc(var(--vh, 1vh) * 350);
+  height: calc(var(--vh, 1vh) * 290);
 }
 .about-section h2{
   /* This margin-top fixes the white gap between sections*/
@@ -380,7 +367,7 @@ header {
   font-size: 30px;
   text-align: center;
   height: 300px;
-  margin: 40px;
+  margin: 5%;
   
 }
 .columns h3{
@@ -428,7 +415,7 @@ span{
 
 .projects-section {
   /* height: 270vh; */
-  height: calc(var(--vh, 1vh) * 250);
+  height: calc(var(--vh, 1vh) * 210);
   background-color:red;
 }
 
@@ -445,7 +432,7 @@ span{
 /* Filter */
 .filter{
   width: 100%;
-  margin: 40px auto;
+  margin: 30px auto;
 }
 
 .filter ul{
@@ -665,6 +652,7 @@ input[type=submit]:hover {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin-top: 10%;
 }
 
 .contact-info{
@@ -774,6 +762,18 @@ input[type=submit]:hover {
 /* ###########################################
               Media query
 ############################################## */
+@media only screen and (min-width: 360px){
+  .about-section {
+    /* height: 260vh; */
+    height: calc(var(--vh, 1vh) * 280);
+  }
+  .projects-section{
+    /* height: 140vh; */
+    height: calc(var(--vh, 1vh) * 210);
+  }
+}
+
+
 @media only screen and (min-width: 580px){
   .about-section {
     /* height: 260vh; */
@@ -837,12 +837,7 @@ input[type=submit]:hover {
 
 
 
-  /* About section */
 
-
-
-
-  /* End of about section */
 
   .home-section h1{
     font-size: 4rem;
