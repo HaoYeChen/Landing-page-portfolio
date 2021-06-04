@@ -1,10 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Zhi+Mang+Xing&display=swap");
 
+html,
 body {
+  height: 100%;
+  width: 100%;
   margin: 0;
   padding: 0;
   font-family: "Poppins", sans-serif;
   box-sizing: border-box;
+
 }
 
 /* ###########################################
@@ -162,7 +166,7 @@ header {
   /* the background image will be positioned in the center of the element */
   background-position: center;
   /* Relative to 1% of the height of the viewport* */
-  height: 100vh;
+  height: 100%;
   /* This defines a flex container; inline or block depending on the given value.
     It enables a flex context for all its direct children. */
   /* The element is turned into an flexbox container.
@@ -234,10 +238,8 @@ header {
 ############################################## */
 
 .about-section {
-  /* height: 290vh;
-  background-color: red; */
-  /* height: 300vh; Fallback for browsers that do not support Custom Properties */
-  height: calc(var(--vh, 1vh) * 610);
+
+
 }
 .about-section h2{
   /* This margin-top fixes the white gap between sections*/
@@ -258,7 +260,7 @@ header {
 /* image of me */
 .profile-picture img{
   border-radius: 50%;
-  width: 150px;
+  max-width: 100%;
 }
 .about-me{
   text-align: left;
@@ -300,10 +302,10 @@ header {
 .columns{
   display: flex;
   flex-direction: column;
-  font-size: 30px;
+  /* font-size: 30px; */
   text-align: center;
-  height: 300px;
-  margin: 50px;
+  /* height: 300px; */
+  margin: 3rem;
   
 }
 .columns h3{
@@ -311,7 +313,7 @@ header {
 }
 
 .columns td{
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: bold;
 }
 .flex-item-1 {
@@ -333,16 +335,16 @@ span{
 .columns table{
   margin-left: auto;
 	margin-right: auto;
-  margin-bottom: 50px;
+  /* margin-bottom: 50px; */
 }
 .columns table, tr, td{
-  padding: 10px;
+  padding: 1rem;
 }
 
 .svg-icon{
-  width: 50px;
+  width: 2rem;
   vertical-align: middle;
-  margin-right: 50px;
+  margin-right: 2rem;
 }
 
 /* ###########################################
@@ -350,8 +352,7 @@ span{
 ############################################## */
 
 .projects-section {
-  /* height: 270vh; */
-  height: calc(var(--vh, 1vh) * 430);
+
 }
 
 .projects-section h2{
@@ -510,8 +511,6 @@ span{
 ############################################## */
 
 .contact-section {
-  height: 130vh;
-  height: calc(var(--vh, 1vh) * 270);
   background-color: #282b34;
   display: flex;
   justify-content: center;
@@ -522,9 +521,9 @@ span{
 
 .contact-section h2{
   /* This margin-top fixes the white gap between sections*/
-  margin-top: 0;
+  margin-top: 0px;
   /* Padding-top makes navbar dont overlap title */
-  padding-top: 10px;
+  padding-top: 150px;
   font-size: 2rem;
   text-align: center;
   text-transform: uppercase;
@@ -697,34 +696,6 @@ input[type=submit]:hover {
 /* ###########################################
               Media query
 ############################################## */
-@media only screen and (min-width: 360px){
-  .about-section {
-    /* height: 260vh; */
-    height: calc(var(--vh, 1vh) * 410);
-  }
-  .projects-section{
-    /* height: 140vh; */
-    height: calc(var(--vh, 1vh) * 290);
-  }
-  .contact-section{
-    height: calc(var(--vh, 1vh) * 180);
-  }
-}
-
-@media only screen and (min-width: 412px){
-  .about-section {
-    /* height: 260vh; */
-    height: calc(var(--vh, 1vh) * 370);
-  }
-  .projects-section{
-    /* height: 140vh; */
-    height: calc(var(--vh, 1vh) * 270);
-  }
-  .contact-section{
-    height: calc(var(--vh, 1vh) * 160);
-  }
-}
-
 @media only screen and (max-width: 768px) {
   /* Desktop navigation */
   .main-nav{
@@ -746,36 +717,9 @@ input[type=submit]:hover {
   .home-section p {
     font-size: 1.3rem;
   }
-
-  .about-section {
-    /* height: 260vh; */
-    height: calc(var(--vh, 1vh) * 280);
-  }
-  .projects-section{
-    /* height: 140vh; */
-    height: calc(var(--vh, 1vh) * 150);
-  }
-  .contact-section{
-    height: calc(var(--vh, 1vh) * 120);
-  }
-
   /* Footer section */
   .footer{
     font-size: 0.8rem;
-  }
-}
-@media only screen and (min-width: 870px){
-  .about-section {
-    /* height: 260vh; */
-    height: calc(var(--vh, 1vh) * 260);
-  }
-  .projects-section {
-    /* height: 110vh; */
-    height: calc(var(--vh, 1vh) * 100);
-  }
-  .contact-section {
-    /* height: 110vh; */
-    height: calc(var(--vh, 1vh) * 110);
   }
 }
 
@@ -791,10 +735,6 @@ input[type=submit]:hover {
     font-size: 1.8rem;
   }
 
-  .contact-section {
-    height: 110vh;
-    height: calc(var(--vh, 1vh) * 110);
-  }
   .contact-container{
     display: flex;
     flex-direction: row;
@@ -932,13 +872,12 @@ input[type=submit]:hover {
     opacity: 0;
   }
 }
-
-  /* About section */
-
-  .about-section {
-    /* height: 190vh; */
-    height: calc(var(--vh, 1vh) * 230);
-  }
+.about-section{
+  height: 170%;
+}
+.projects-section{
+  height: 100%;
+}
 
   .columns{
     display: flex;
@@ -947,17 +886,6 @@ input[type=submit]:hover {
     text-align: center;
     height: 300px;
   }
-
-  .projects-section {
-    /* height: 100vh; */
-    height: calc(var(--vh, 1vh) * 130);
-  }
-
-  .contact-section {
-    /* height: 100vh; */
-    height: calc(var(--vh, 1vh) * 130);
-  }
-
   .container-contact{
     display: flex;
     flex-direction: row;
@@ -1012,26 +940,4 @@ input[type=submit]:hover {
     font-size: 1rem;
   }
 
-}
-
-@media only screen and (min-width: 1450px){
-  .about-section {
-    /* height: 190vh; */
-    height: calc(var(--vh, 1vh) * 200);
-  }
-  .projects-section {
-      /* height: 100vh; */
-      height: calc(var(--vh, 1vh) * 100);
-    }
-    .contact-section {
-      /* height: 100vh; */
-      height: calc(var(--vh, 1vh) * 100);
-    }
-    .contact-section h2{
-
-      /* Padding-top makes navbar dont overlap title */
-      padding-top: 100px;
-
-    }
-}
-  
+}  
