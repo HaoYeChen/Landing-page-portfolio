@@ -620,11 +620,8 @@ input[type=submit]:hover {
 /* Social media icons */
 .social-media-icons{
   font-size: 1.3rem;
-  margin: 0px;
-}
-
-.social-media-icons{
   list-style-type: none;
+  margin: 0px;
   padding: 0px;
 }
 .social-media-icons li{
@@ -634,13 +631,13 @@ input[type=submit]:hover {
 .social-media-icons a{
   color: #fff;
   text-decoration: none;
-
 }
 .fa {
   margin: 15px;
 }
 
 .fa-facebook {
+  border-radius: 10px;
   padding:10px 16px;
   -o-transition:.5s;
   -ms-transition:.5s;
@@ -655,6 +652,7 @@ input[type=submit]:hover {
 }
 
 .fa-linkedin {
+  border-radius: 10px;
   padding:10px 14px;
   -o-transition:.5s;
   -ms-transition:.5s;
@@ -667,6 +665,7 @@ input[type=submit]:hover {
   background-color: #0073a4;
 }
 .fa-github {
+  border-radius: 10px;
   padding:10px 14px;
   -o-transition:.5s;
   -ms-transition:.5s;
