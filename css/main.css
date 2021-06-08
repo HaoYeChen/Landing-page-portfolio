@@ -128,6 +128,9 @@ header {
   margin-top: 30px;
   list-style: none;
 }
+.overlay-menu-content ul{
+  padding: 0;
+}
 
 .overlay-menu a {
   padding: 8px;
@@ -873,71 +876,70 @@ input[type=submit]:hover {
   }
 }
 .about-section{
-  height: 170%;
+  height: 200%;
 }
 .projects-section{
   height: 100%;
 }
+.columns{
+  display: flex;
+  flex-direction: row;
+  font-size: 30px;
+  text-align: center;
+  height: 300px;
+}
+.container-contact{
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+}
+.contact-right {
+  order: 2;
+  padding: 10px;
+  margin: 100px;
+  flex: 50%;
+}
+.contact-left {
+  order: 1;
+  padding: 10px;
+  margin: 100px;
+  flex: 50%;
+}
+.contact-left h3{
+  font-size: 1.6rem;
+  margin: 15px;
+}
+.contact-info p{
+  font-size: 1.3rem;
+  margin: 15px;
+}
+.contact-email{
+  font-size: 1.3rem;
+  margin: 15px;
+}
 
-  .columns{
-    display: flex;
-    flex-direction: row;
-    font-size: 30px;
-    text-align: center;
-    height: 300px;
-  }
-  .container-contact{
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-  }
-  .contact-right {
-    order: 2;
-    padding: 10px;
-    margin: 100px;
-    flex: 50%;
-  }
-  .contact-left {
-    order: 1;
-    padding: 10px;
-    margin: 100px;
-    flex: 50%;
-  }
-  .contact-left h3{
-    font-size: 1.6rem;
-    margin: 15px;
-  }
-  .contact-info p{
-    font-size: 1.3rem;
-    margin: 15px;
-  }
-  .contact-email{
-    font-size: 1.3rem;
-    margin: 15px;
-  }
+.social-media-icons{
+  font-size: 1.6rem;
+}
 
-  .social-media-icons{
-    font-size: 1.6rem;
-  }
+ input[type=text], [type=email], textarea {
+  width: 150%;
 
-  input[type=text], [type=email], textarea {
-    width: 150%;
+ }
 
-  }
+ /* input */
+input[type=file] {
+width: 148%;
+}
 
-  /* input */
-  input[type=file] {
-    width: 148%;
-  }
-
-  input[type=submit] {
-    width: 160%;
-  }
+ input[type=submit] {
+  width: 160%;
+}
 
 
-/* Footer */
-  .footer{
-    font-size: 1rem;
-  }
+* Footer */
+.footer{
+  font-size: 1rem;
+}
 
 }  
