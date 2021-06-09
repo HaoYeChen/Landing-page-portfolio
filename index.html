@@ -26,7 +26,7 @@
     <!-- Navbar -->
     <header>
         <!-- Logo -->
-        <a href="#home" class="site-logo" aria-label="homepage">豪</a>
+        <a href="#home" class="site-logo" aria-label="Home Page">豪</a>
         
         <!-- Main nav -->
         <nav class="main-nav">
@@ -38,23 +38,21 @@
             </ul>
         </nav>
     
-
-    <!-- Mobile nav -->
-    <nav class="mobile-nav">
-        <!-- <a href="#home" class="site-logo" aria-label="homepage">豪</a> -->
-        <span class="hamburger-menu-icon" onclick="openNav()">&#9776;</span>
-        
+        <!-- Mobile nav -->
+        <nav class="mobile-nav">
+            <span class="hamburger-menu-icon" onclick="openNav()">&#9776;</span>
+            
             <div id="hamburger" class="overlay-menu">
                 <div class="closebtn" onclick="closeNav()">&times;</div>
-                
-                <div class="overlay-menu-content">
-                    <ul>
-                        <li class="nav-list-item"><a href="#home" class="nav-link" onclick="closeNav()">Home</a></li>
-                        <li class="nav-list-item"><a href="#scroll-to-about" class="nav-link" onclick="closeNav()">About</a></li>
-                        <li class="nav-list-item"><a href="#projects" class="nav-link" onclick="closeNav()">Projects</a></li>
-                        <li class="nav-list-item"><a href="#contact" class="nav-link" onclick="closeNav()">Contact</a></li>
-                    </ul>
-                </div>
+                    
+                    <div class="overlay-menu-content">
+                        <ul>
+                            <li class="nav-list-item"><a href="#home" class="nav-link" onclick="closeNav()">Home</a></li>
+                            <li class="nav-list-item"><a href="#scroll-to-about" class="nav-link" onclick="closeNav()">About</a></li>
+                            <li class="nav-list-item"><a href="#projects" class="nav-link" onclick="closeNav()">Projects</a></li>
+                            <li class="nav-list-item"><a href="#contact" class="nav-link" onclick="closeNav()">Contact</a></li>
+                        </ul>
+                    </div>
             </div>  
         </nav>
     </header>
@@ -67,7 +65,7 @@
             <h1>Hao Ye Chen</h1>
             <p>Jeg er igang med min H5 som datatekniker med speciale i programmering</p>
             <a class="go-to-projects" href="#projects">View my projects</a>
-            <a href="#scroll-to-about"><span></span></a>
+            <a href="#scroll-to-about"  aria-label="Go To About Section"><span></span></a>
             
         </div>
     </section>
@@ -94,7 +92,7 @@
                         Jeg bor lige nu hos mine forældre sammen med min lille bror.</p>
                 </div>
 
-                <a href="CV/Hao Ye Chen - CV.pdf" class="download-cv-button">Download CV</a>
+                <a href="CV/Hao Ye Chen - CV.pdf" class="download-cv-button" aria-label="CV" target="_blank" rel="noopener noreferrer">Download CV</a>
 
         </div>
 
@@ -274,11 +272,6 @@
         </div>
     </section>
 
-
-
-
-
-
     <!-- Projects -->
 <section class="projects-section"  id="projects">
 
@@ -388,7 +381,7 @@
                         </div>
 
                         <div class="field">
-                            <input type="file" name="myfile" rows="7" multiple>
+                            <input type="file" name="myfile" rows="7" aria-labelledby="Upload file or files" multiple>
                         </div>
                         
                         <div class="field">
@@ -422,7 +415,7 @@
                     <ul class="social-media-icons">
                         <li><a href="https://www.facebook.com/HaoYeChen/" class="fa fa-facebook" aria-label="Facebook" target="_blank" rel="noopener noreferrer"></a></li>
                         <li><a href="https://www.linkedin.com/in/hao-ye-chen-34bb08b4/" class="fa fa-linkedin" aria-label="Linkedin" target="_blank" rel="noopener noreferrer"></a></li>
-                        <li><a href="https://github.com/HaoYeChen" class="fa fa-github" aria-label="Facebook" target="_blank" rel="noopener noreferrer"></a></li>
+                        <li><a href="https://github.com/HaoYeChen" class="fa fa-github" aria-label="Github" target="_blank" rel="noopener noreferrer"></a></li>
                     </ul>
 
                 </div>
