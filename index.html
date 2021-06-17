@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Hao Ye Chen">
     <meta name="description" content="Jeg er igang med min H5 som datatekniker med speciale i programmering">
-    <meta name="keywords" content="Hao, Hao Ye Chen, HTML, CSS, JavaScript, Portfolio, Elevplads, Internship">
+    <meta name="keywords" content="Hao, Hao Ye Chen, HTML, CSS, JavaScript, Portfolio, Elevplads, Internship, programmering">
     <title>Hao Ye Chen - Søger elevplads</title>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -32,7 +32,7 @@
         <nav class="main-nav">
             <ul class="nav-list">
                 <li class="nav-list-item"><a href="#home" class="nav-link">Home</a></li>
-                <li class="nav-list-item"><a href="#scroll-to-about" class="nav-link">About</a></li>
+                <li class="nav-list-item"><a href="#about" class="nav-link">About</a></li>
                 <li class="nav-list-item"><a href="#projects" class="nav-link">Projects</a></li>
                 <li class="nav-list-item"><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
@@ -48,7 +48,7 @@
                     <div class="overlay-menu-content">
                         <ul>
                             <li class="nav-list-item"><a href="#home" class="nav-link" onclick="closeNav()">Home</a></li>
-                            <li class="nav-list-item"><a href="#scroll-to-about" class="nav-link" onclick="closeNav()">About</a></li>
+                            <li class="nav-list-item"><a href="#about" class="nav-link" onclick="closeNav()">About</a></li>
                             <li class="nav-list-item"><a href="#projects" class="nav-link" onclick="closeNav()">Projects</a></li>
                             <li class="nav-list-item"><a href="#contact" class="nav-link" onclick="closeNav()">Contact</a></li>
                         </ul>
@@ -65,14 +65,14 @@
             <h1>Hao Ye Chen</h1>
             <p>Jeg er igang med min H5 som datatekniker med speciale i programmering</p>
             <a class="go-to-projects" href="#projects">View my projects</a>
-            <a href="#scroll-to-about"  aria-label="Go To About Section"><span></span></a>
+            <a href="#about"  aria-label="Go To About Section"><span></span></a>
             
         </div>
     </section>
 
 
     <!-- About -->
-    <section class="about-section" id="scroll-to-about">
+    <section class="about-section" id="about">
         
         <h2>About</h2>
 
@@ -406,8 +406,12 @@
                 <div class="contact-info">
 
                     <h3>E-mail</h3>
-                    <a class="contact-email" href="mailto:haoyechen@hotmail.com">haoyechen@hotmail.com</a>
-
+                    <!-- Counter spam bots -->
+                    <!-- if click on it, it will convert the wrong email to the right one -->
+                    <a class="contact-email" 
+                    href="haoyechen [at] hotmail.com"
+                    rel="nofollow" onclick="this.href='mailto:' + 'haoyechen' + '@' + 'hotmail.com'"
+                    >Contact me</a>
                 </div>
                 <div class="contact-info">
 
@@ -422,9 +426,6 @@
             </div>
         </div>
     </section>
-
-    <!-- Scroll up button -->
-    <a id="scroll-up-button"></a>
 
     <!-- Footer -->
     <footer class="footer">
@@ -453,6 +454,6 @@
             $(this).addClass('active').siblings().removeClass('active');
           })
         })
-      </script>
+    </script>
 </body>
 </html>

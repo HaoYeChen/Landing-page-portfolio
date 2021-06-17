@@ -5,7 +5,7 @@ const header = document.querySelector("header");
 const sectionOne = document.querySelector(".home-intro");
 
 const sectionOneOptions = {
-  rootMargin: "170px 0px 0px 0px"
+  rootMargin: "150px 0px 0px 0px"
 };
 
 const sectionOneObserver = new IntersectionObserver(function(
@@ -64,13 +64,3 @@ $(document).ready(function(){
     } // End if
   });
 });
-
-/* ###########################################
-            Viewport units on mobile
-############################################## */
-// https://css-tricks.com/the-trick-to-viewport-units-on-mobile/
-
-// First we get the viewport height and we multiple it by 1% to get a value for a vh unit
-const vh = window.innerHeight * 0.01;
-// Then we set the value in the --vh custom property to the root of the document
-document.documentElement.style.setProperty('--vh', `${vh}px`);
