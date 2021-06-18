@@ -8,7 +8,6 @@ body {
   padding: 0;
   font-family: "Poppins", sans-serif;
   box-sizing: border-box;
-
 }
 
 /* ###########################################
@@ -42,7 +41,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: .8em 3em;
+  padding: 0.8em 3em;
   transition: background 250ms ease-in;
   background: var(--background);
   color: var(--text);
@@ -128,7 +127,7 @@ header {
   margin-top: 30px;
   list-style: none;
 }
-.overlay-menu-content ul{
+.overlay-menu-content ul {
   padding: 0;
 }
 
@@ -153,7 +152,6 @@ header {
   font-size: 60px;
   cursor: pointer;
 }
-
 
 /* ###########################################
                   Home section
@@ -188,13 +186,13 @@ header {
   /* The text content is centered. */
   text-align: center;
 
-  padding:0 20px;
+  padding: 0 20px;
 }
 
-.home-section h1{
+.home-section h1 {
   font-size: 2rem;
 }
-.home-section p{
+.home-section p {
   font-size: 1rem;
 }
 
@@ -203,7 +201,6 @@ header {
   color: #fff;
   font-weight: bold;
   padding: 15px;
-
 }
 
 .home-section span {
@@ -233,18 +230,13 @@ header {
   color: black;
 }
 
-
-
-
 /* ###########################################
               About section
 ############################################## */
 
 .about-section {
-
-
 }
-.about-section h2{
+.about-section h2 {
   /* This margin-top fixes the white gap between sections*/
   margin-top: 0px;
   /* Padding-top makes navbar dont overlap title */
@@ -254,18 +246,18 @@ header {
   text-transform: uppercase;
 }
 
-.profile{
+.profile {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 /* image of me */
-.profile-picture img{
+.profile-picture img {
   border-radius: 50%;
   max-width: 100%;
 }
-.about-me{
+.about-me {
   text-align: left;
   margin-left: auto;
   margin-right: auto;
@@ -281,9 +273,8 @@ header {
   font-size: calc(16px + (26 - 16) * ((100vw - 400px) / (1600 - 300)));
 }
 
-
 /* Download cv button */
-.download-cv-button{
+.download-cv-button {
   background-color: rgba(255, 255, 255, 0);
   color: Black;
   font-weight: bold;
@@ -302,20 +293,19 @@ header {
   color: #fff;
 }
 
-.columns{
+.columns {
   display: flex;
   flex-direction: column;
   /* font-size: 30px; */
   text-align: center;
   /* height: 300px; */
   margin: 3rem;
-  
 }
-.columns h3{
+.columns h3 {
   font-size: 1.5rem;
 }
 
-.columns td{
+.columns td {
   font-size: 1rem;
   font-weight: bold;
 }
@@ -327,24 +317,26 @@ header {
   flex: 50%;
 }
 
-ul{
+ul {
   list-style: none;
 }
 
-span{
+span {
   display: inline-block;
 }
 
-.columns table{
+.columns table {
   margin-left: auto;
-	margin-right: auto;
+  margin-right: auto;
   /* margin-bottom: 50px; */
 }
-.columns table, tr, td{
+.columns table,
+tr,
+td {
   padding: 1rem;
 }
 
-.svg-icon{
+.svg-icon {
   width: 2rem;
   vertical-align: middle;
   margin-right: 2rem;
@@ -355,10 +347,9 @@ span{
 ############################################## */
 
 .projects-section {
-
 }
 
-.projects-section h2{
+.projects-section h2 {
   /* This margin-top fixes the white gap between sections*/
   margin-top: 0px;
   /* Padding-top makes navbar dont overlap title */
@@ -369,21 +360,20 @@ span{
 }
 
 /* Filter */
-.filter{
+.filter {
   width: 100%;
   margin: 30px auto;
 }
 
-.filter ul{
+.filter ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   padding: 0;
-
 }
 
-.filter ul li{
+.filter ul li {
   list-style: none;
   background: #eee;
   padding: 8px 20px;
@@ -391,16 +381,16 @@ span{
   letter-spacing: 1px;
   cursor: pointer;
   font-weight: bold;
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 
-.filter ul li.active{
+.filter ul li.active {
   background: #03a9f4;
   color: #fff;
 }
 
 /* Images of projects */
-.product{
+.product {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -409,21 +399,20 @@ span{
   margin-bottom: 50px;
 }
 
-.box{
+.box {
   position: relative;
   width: 250px;
   height: auto;
-  background:#000;
+  background: #000;
   box-sizing: border-box;
   overflow: hidden;
-  box-shadow: 0 5px 10px rgba(0,0,0,.8);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.8);
   border-radius: 5%;
   margin: 20px;
-  
 }
-.box:before{
-  content: '';
-  position:absolute;
+.box:before {
+  content: "";
+  position: absolute;
   top: 30px;
   left: 10px;
   right: 10px;
@@ -431,19 +420,19 @@ span{
   border-top: 1px solid #fff;
   border-bottom: 1px solid #fff;
   box-sizing: border-box;
-  transition: .5s;
+  transition: 0.5s;
   transform: scaleX(0);
   opacity: 0;
   z-index: 1;
 }
 
-.box:hover:before{
+.box:hover:before {
   transform: scaleX(1);
   opacity: 1;
 }
-.box:after{
-  content: '';
-  position:absolute;
+.box:after {
+  content: "";
+  position: absolute;
   top: 10px;
   left: 30px;
   right: 30px;
@@ -451,30 +440,30 @@ span{
   border-left: 1px solid #fff;
   border-right: 1px solid #fff;
   box-sizing: border-box;
-  transition: .5s;
+  transition: 0.5s;
   transform: scaleY(0);
   opacity: 0;
   z-index: 1;
 }
 
-.box:hover:after{
+.box:hover:after {
   transform: scaleY(1);
   opacity: 1;
 }
 
-.box .imgBox{
+.box .imgBox {
   position: relative;
 }
-.box .imgBox img{
+.box .imgBox img {
   width: 100%;
-  transition: .5s;
+  transition: 0.5s;
 }
-.box:hover .imgBox img{
-  opacity: .2;
+.box:hover .imgBox img {
+  opacity: 0.2;
   transform: scale(1.2);
 }
-.box .descriptionBox{
-  position:absolute;
+.box .descriptionBox {
+  position: absolute;
   width: 100%;
   top: 50%;
   transform: translateY(-50%);
@@ -483,33 +472,43 @@ span{
   box-sizing: border-box;
   text-align: center;
 }
-.box .descriptionBox h2{
+.box .descriptionBox h2 {
   margin: 0 0 30px;
   padding: 0;
   color: #fff;
-  transition: .5s;
+  transition: 0.5s;
   transform: translateY(-50px);
   opacity: 0;
   visibility: hidden;
+  font-size: 1.8rem;
 }
-.box .descriptionBox p{
+.box .descriptionBox p {
   margin: 0;
   padding: 0;
   color: #fff;
-  transition: .5s;
+  transition: 0.5s;
+  transform: translateY(50px);
+  opacity: 0;
+  visibility: hidden;
+  margin-bottom: 1rem;
+}
+.box .descriptionBox .svg-icon {
+  width: 1rem;
+  margin: 0;
+  padding: 0;
+  transition: 0.5s;
   transform: translateY(50px);
   opacity: 0;
   visibility: hidden;
 }
 .box:hover .descriptionBox h2,
-.box:hover .descriptionBox p{
+.box:hover .descriptionBox p,
+.box:hover .descriptionBox .svg-icon {
   opacity: 1;
   visibility: visible;
   transform: translateY(0px);
-  transition-delay: .2s;
+  transition-delay: 0.2s;
 }
-
-
 
 /* ###########################################
               Contact section
@@ -524,7 +523,7 @@ span{
   flex-direction: column;
 }
 
-.contact-section h2{
+.contact-section h2 {
   /* This margin-top fixes the white gap between sections*/
   margin-top: 0px;
   /* Padding-top makes navbar dont overlap title */
@@ -535,19 +534,21 @@ span{
 }
 
 /* Right side */
-.contact-right{
+.contact-right {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 
-.field{
+.field {
   padding: 10px;
 }
 
 /* input */
-input[type=text], [type=email], textarea {
+input[type="text"],
+[type="email"],
+textarea {
   width: 90%;
   background: #1e242c;
   padding: 12px;
@@ -558,7 +559,7 @@ input[type=text], [type=email], textarea {
   outline: none;
 }
 
-input[type=file] {
+input[type="file"] {
   width: 88%;
   color: #fff;
   border: 1px dashed rgba(255, 255, 255, 0.4);
@@ -566,7 +567,7 @@ input[type=file] {
   padding: 15px;
 }
 
-input[type=submit] {
+input[type="submit"] {
   background-color: rgba(255, 255, 255, 0);
   color: #fff;
   font-weight: bold;
@@ -580,13 +581,13 @@ input[type=submit] {
   width: 100%;
 }
 
-input[type=submit]:hover {
+input[type="submit"]:hover {
   background-color: #fff;
   color: black;
 }
 
 /* Left side */
-.contact-left{
+.contact-left {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -594,42 +595,54 @@ input[type=submit]:hover {
   margin-top: 10%;
 }
 
-.contact-info{
+.contact-info {
   padding: 5px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+/* reverse phone number for counter spam bots */
+span.rev {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+}
+span.rev.phone:before {
+  content: "78 33";
+}
+span.rev.phone:after {
+  content: " 18 06 (54+)";
+}
+
 .contact-email {
   text-decoration: none;
   color: #fff;
 }
-.contact-left h3{
+.contact-left h3 {
   font-size: 1.3rem;
   margin: 15px;
 }
-.contact-info p{
+.contact-info p {
   font-size: 1rem;
   margin: 15px;
 }
-.contact-email{
+.contact-email {
   font-size: 1rem;
   margin: 15px;
 }
 
 /* Social media icons */
-.social-media-icons{
+.social-media-icons {
   font-size: 1.3rem;
   list-style-type: none;
   margin: 0px;
   padding: 0px;
 }
-.social-media-icons li{
+.social-media-icons li {
   vertical-align: top;
   display: inline;
 }
-.social-media-icons a{
+.social-media-icons a {
   color: #fff;
   text-decoration: none;
 }
@@ -639,14 +652,13 @@ input[type=submit]:hover {
 
 .fa-facebook {
   border-radius: 10px;
-  padding:10px 16px;
-  -o-transition:.5s;
-  -ms-transition:.5s;
-  -moz-transition:.5s;
-  -webkit-transition:.5s;
-  transition: .5s;
+  padding: 10px 16px;
+  -o-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   background-color: #282b34;
-
 }
 .fa-facebook:hover {
   background-color: #3d5b99;
@@ -654,12 +666,12 @@ input[type=submit]:hover {
 
 .fa-linkedin {
   border-radius: 10px;
-  padding:10px 14px;
-  -o-transition:.5s;
-  -ms-transition:.5s;
-  -moz-transition:.5s;
-  -webkit-transition:.5s;
-  transition: .5s;
+  padding: 10px 14px;
+  -o-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   background-color: #282b34;
 }
 .fa-linkedin:hover {
@@ -667,12 +679,12 @@ input[type=submit]:hover {
 }
 .fa-github {
   border-radius: 10px;
-  padding:10px 14px;
-  -o-transition:.5s;
-  -ms-transition:.5s;
-  -moz-transition:.5s;
-  -webkit-transition:.5s;
-  transition: .5s;
+  padding: 10px 14px;
+  -o-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   background-color: #282b34;
 }
 .fa-github:hover {
@@ -698,44 +710,43 @@ input[type=submit]:hover {
 ############################################## */
 @media only screen and (max-width: 768px) {
   /* Desktop navigation */
-  .main-nav{
+  .main-nav {
     display: none;
   }
 }
 
 @media only screen and (min-width: 768px) {
-
   /* Mobile navigation */
-  .mobile-nav{
+  .mobile-nav {
     display: none;
   }
 
   /* Home section */
-  .home-section h1{
+  .home-section h1 {
     font-size: 3rem;
   }
   .home-section p {
     font-size: 1.3rem;
   }
   /* Footer section */
-  .footer{
+  .footer {
     font-size: 0.8rem;
   }
 }
 
 @media only screen and (min-width: 1025px) {
-  .mobile-nav{
+  .mobile-nav {
     display: none;
   }
 
-  .home-section h1{
+  .home-section h1 {
     font-size: 4rem;
   }
   .home-section p {
     font-size: 1.8rem;
   }
 
-  .contact-container{
+  .contact-container {
     display: flex;
     flex-direction: row;
     text-align: center;
@@ -752,62 +763,63 @@ input[type=submit]:hover {
     margin: 70px;
     flex: 50%;
   }
-  .contact-left h3{
+  .contact-left h3 {
     font-size: 1.6rem;
     margin: 15px;
   }
-  .contact-info p{
+  .contact-info p {
     font-size: 1.3rem;
     margin: 15px;
   }
-  .contact-email{
+  .contact-email {
     font-size: 1.3rem;
     margin: 15px;
   }
 
-  .social-media-icons{
+  .social-media-icons {
     font-size: 1.3rem;
     padding: 0px;
   }
 
-  input[type=text], [type=email], textarea {
+  input[type="text"],
+  [type="email"],
+  textarea {
     width: 135%;
   }
 
   /* input */
-  input[type=file] {
+  input[type="file"] {
     width: 133%;
   }
 
-  input[type=submit] {
+  input[type="submit"] {
     width: 145%;
   }
 
-  .footer{
+  .footer {
     font-size: 0.9rem;
   }
 }
 
 @media only screen and (min-width: 1280px) {
   /* Mobile nav */
-  .mobile-nav{
+  .mobile-nav {
     display: none;
   }
   /* End of mobile nav */
 
-
   /* Home section */
-  .home-section h1{
+  .home-section h1 {
     font-size: 5rem;
   }
   .home-section p {
     font-size: 2.3rem;
   }
-  .go-to-projects{
+  .go-to-projects {
     font-size: 1.3rem;
   }
 
-/* Animation scroll button */
+  /* Animation scroll button */
   .home-intro a {
     padding-top: 100px;
   }
@@ -874,23 +886,23 @@ input[type=submit]:hover {
   }
 
   /* About Section */
-  .about-section{
+  .about-section {
     height: 200%;
   }
 
-  .columns td{
+  .columns td {
     font-size: 1.5rem;
   }
 
-  .svg-icon{
+  .svg-icon {
     width: 3rem;
   }
 
   /* Projects Section */
-  .projects-section{
+  .projects-section {
     height: 100%;
   }
-  .columns{
+  .columns {
     display: flex;
     flex-direction: row;
     font-size: 30px;
@@ -899,7 +911,7 @@ input[type=submit]:hover {
   }
 
   /* Contact Section */
-  .container-contact{
+  .container-contact {
     display: flex;
     flex-direction: row;
     text-align: center;
@@ -916,40 +928,40 @@ input[type=submit]:hover {
     margin: 100px;
     flex: 50%;
   }
-  .contact-left h3{
+  .contact-left h3 {
     font-size: 1.6rem;
     margin: 15px;
   }
-  .contact-info p{
+  .contact-info p {
     font-size: 1.3rem;
     margin: 15px;
   }
-  .contact-email{
+  .contact-email {
     font-size: 1.3rem;
     margin: 15px;
   }
 
-  .social-media-icons{
+  .social-media-icons {
     font-size: 1.6rem;
   }
 
-  input[type=text], [type=email], textarea {
+  input[type="text"],
+  [type="email"],
+  textarea {
     width: 150%;
-
   }
 
   /* input */
-  input[type=file] {
-  width: 148%;
+  input[type="file"] {
+    width: 148%;
   }
 
-  input[type=submit] {
+  input[type="submit"] {
     width: 160%;
   }
 
   /* Footer */
-  .footer{
+  .footer {
     font-size: 1rem;
   }
-
-}  
+}
