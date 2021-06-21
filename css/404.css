@@ -1,18 +1,275 @@
-.back-button {
-  background-color: rgba(255, 255, 255, 0);
-  color: Black;
-  font-weight: bold;
-  border: 3px solid black;
-  padding: 10px 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  text-transform: uppercase;
-  transition: background-color 0.5s ease-out;
-  margin-top: 30px;
+@import url("https://fonts.googleapis.com/css2?family=Zhi+Mang+Xing&display=swap");
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
 }
-.back-button:hover,
-.back-button:active {
-  background-color: black;
-  color: #fff;
+
+/* ###########################################
+                    Logo
+############################################## */
+
+.site-logo {
+  font-family: "Zhi Mang Xing", cursive;
+  font-weight: 900;
+  font-size: 3rem;
+  color: var(--text);
+  text-decoration: none;
+  border: 3px solid var(--text);
+  padding: 5px;
+  border-radius: 50%;
+}
+
+/* ###########################################
+              Desktop navigation
+  ############################################## */
+
+header {
+  --text: #333;
+  --background: #f4f4f4;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8em 3em;
+  transition: background 250ms ease-in;
+  background: var(--background);
+  color: var(--text);
+  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
+}
+
+.nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav-link {
+  --spacing: 1em;
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+  padding: calc(var(--spacing) / 2) var(--spacing);
+  position: relative;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.nav-link:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: var(--spacing);
+  right: var(--spacing);
+  height: 2px;
+  background: currentColor;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  transition: -webkit-transform 150ms ease-in-out;
+  transition: transform 150ms ease-in-out;
+  transition: transform 150ms ease-in-out, -webkit-transform 150ms ease-in-out;
+}
+
+.nav-link:hover::after {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+/* ###########################################
+            Hamburger menu navigation
+  ############################################## */
+
+.hamburger-menu-icon {
+  font-size: 30px;
+  cursor: pointer;
+  position: absolute;
+  right: 50px;
+  top: 25px;
+}
+
+.overlay-menu {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.9);
+  overflow-y: hidden;
+  transition: 0.5s;
+}
+
+.overlay-menu-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+  list-style: none;
+}
+.overlay-menu-content ul {
+  padding: 0;
+}
+
+.overlay-menu a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 2.5rem;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay-menu a:hover,
+.overlay-menu a:focus {
+  color: #f1f1f1;
+}
+
+.overlay-menu .closebtn {
+  position: absolute;
+  top: 15px;
+  right: 45px;
+  font-size: 60px;
+  cursor: pointer;
+}
+
+/* ###########################################
+                Error section
+############################################## */
+.error-section {
+  height: 100%;
+}
+
+.error-section img {
+  padding-top: 170px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.error-section h1,
+h3,
+p {
+  text-align: center;
+  margin: 0;
+}
+.error-section h3 {
+  font-size: 1.6rem;
+}
+.error-section p {
+  padding-top: 10px;
+  font-size: 1rem;
+}
+
+@keyframes blink {
+  /**
+     * At the start of the animation the dot
+     * has an opacity of .2
+     */
+  0% {
+    opacity: 0.2;
+  }
+  /**
+     * At 20% the dot is fully visible and
+     * then fades out slowly
+     */
+  20% {
+    opacity: 1;
+  }
+  /**
+     * Until it reaches an opacity of .2 and
+     * the animation can start again
+     */
+  100% {
+    opacity: 0.2;
+  }
+}
+
+.loading-dots span {
+  /**
+     * Use the blink animation, which is defined above
+     */
+  animation-name: blink;
+  /**
+     * The animation should take 1.4 seconds
+     */
+  animation-duration: 1.4s;
+  /**
+     * It will repeat itself forever
+     */
+  animation-iteration-count: infinite;
+  /**
+     * This makes sure that the starting style (opacity: .2)
+     * of the animation is applied before the animation starts.
+     * Otherwise we would see a short flash or would have
+     * to set the default styling of the dots to the same
+     * as the animation. Same applies for the ending styles.
+     */
+  animation-fill-mode: both;
+}
+
+.loading-dots span:nth-child(2) {
+  /**
+     * Starts the animation of the third dot
+     * with a delay of .2s, otherwise all dots
+     * would animate at the same time
+     */
+  animation-delay: 0.2s;
+}
+
+.loading-dots span:nth-child(3) {
+  /**
+     * Starts the animation of the third dot
+     * with a delay of .4s, otherwise all dots
+     * would animate at the same time
+     */
+  animation-delay: 0.4s;
+}
+/* ###########################################
+                  Footer
+############################################## */
+
+.footer {
+  justify-content: center;
+  text-align: center;
+  background: #1b242f;
+  color: #f4f4f4;
+  padding: 2.2rem;
+  margin: 0;
+  font-size: 0.7rem;
+}
+
+/* ###########################################
+              Media query
+############################################## */
+@media only screen and (max-width: 768px) {
+  /* Desktop navigation */
+  .main-nav {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  /* Mobile navigation */
+  .mobile-nav {
+    display: none;
+  }
+
+  .error-section img {
+    padding-top: 100px;
+    width: 50%;
+  }
 }

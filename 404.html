@@ -8,16 +8,59 @@
     <link rel="stylesheet" href="css/404.css">
 </head>
 <body>
-    <div class="error-container">
-        <h1>404</h1>
-        <h3>Opps! Siden blev ikke fundet</h3>
-        <p>Beklager, denne siden du ledet efter findes ikke.</p>
-        <a href="https://www.haoyechen.dk" class="back-button" aria-label="CV">Tilbage</a>
-    </div>
-    <script>
+
+    <!-- Navbar -->
+    <header>
+        <!-- Logo -->
+        <a href="#home" class="site-logo" aria-label="Home Page">豪</a>
+        
+        <!-- Main nav -->
+        <nav class="main-nav">
+            <ul class="nav-list">
+                <li class="nav-list-item"><a href="https://www.haoyechen.dk/#home" class="nav-link">Home</a></li>
+                <li class="nav-list-item"><a href="https://www.haoyechen.dk/#about" class="nav-link">About</a></li>
+                <li class="nav-list-item"><a href="https://www.haoyechen.dk/#projects" class="nav-link">Projects</a></li>
+                <li class="nav-list-item"><a href="https://www.haoyechen.dk/#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    
+        <!-- Mobile nav -->
+        <nav class="mobile-nav">
+            <span class="hamburger-menu-icon" onclick="openNav()">&#9776;</span>
+            
+            <div id="hamburger" class="overlay-menu">
+                <div class="closebtn" onclick="closeNav()">&times;</div>
+                    
+                    <div class="overlay-menu-content">
+                        <ul>
+                            <li class="nav-list-item"><a href="https://www.haoyechen.dk/#home" class="nav-link" onclick="closeNav()">Home</a></li>
+                            <li class="nav-list-item"><a href="https://www.haoyechen.dk/#about" class="nav-link" onclick="closeNav()">About</a></li>
+                            <li class="nav-list-item"><a href="https://www.haoyechen.dk/#projects" class="nav-link" onclick="closeNav()">Projects</a></li>
+                            <li class="nav-list-item"><a href="https://www.haoyechen.dk/#contact" class="nav-link" onclick="closeNav()">Contact</a></li>
+                        </ul>
+                    </div>
+            </div>  
+        </nav>
+    </header>
+
+    <section class="error-section">
+        <div class="container">
+            <img src="/img/404.svg" alt="404 image">
+
+            <h3>Hov, noget gik galt!</h3>
+            <p>Siden, du leder efter, blev desværre ikke fundet!</p>
+            <p class="loading-dots">Du bliver omdirigere efter 5 sekunder<span>.</span><span>.</span><span>.</span></p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>Hao Ye Chen &copy; 2018 - <script>document.write(new Date().getFullYear())</script> - All Rights Reserved</p>
+    </footer>
+    <!-- <script>
         setTimeout(function(){
            window.location.href = 'https://www.haoyechen.dk';
         }, 5000);
-     </script>
+     </script> -->
+     <script src="javascript/main.js"></script>
 </body>
 </html>

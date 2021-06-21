@@ -1,18 +1,12 @@
-.back-button {
-  background-color: rgba(255, 255, 255, 0);
-  color: Black;
-  font-weight: bold;
-  border: 3px solid black;
-  padding: 10px 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  text-transform: uppercase;
-  transition: background-color 0.5s ease-out;
-  margin-top: 30px;
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
 }
-.back-button:hover,
-.back-button:active {
-  background-color: black;
-  color: #fff;
+
+.success-container {
 }
