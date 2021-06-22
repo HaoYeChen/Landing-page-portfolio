@@ -153,8 +153,9 @@ header {
 }
 
 .error-section img {
-  padding-top: 170px;
-  width: 100%;
+  padding-top: 160px;
+  width: 50%;
+  max-width: 250px;
   margin-left: auto;
   margin-right: auto;
   display: block;
@@ -219,6 +220,7 @@ p {
      * as the animation. Same applies for the ending styles.
      */
   animation-fill-mode: both;
+  font-weight: bold;
 }
 
 .loading-dots span:nth-child(2) {
@@ -267,9 +269,11 @@ p {
   .mobile-nav {
     display: none;
   }
-
-  .error-section img {
-    padding-top: 100px;
-    width: 50%;
+  .error-section h3 {
+    font-size: 2rem;
+  }
+  .error-section p {
+    padding-top: 10px;
+    font-size: 1.5rem;
   }
 }

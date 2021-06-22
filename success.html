@@ -8,14 +8,55 @@
     <link rel="stylesheet" href="css/success.css">
 </head>
 <body>
-    <div class="success-container">
-        <h1>Tak for din form</h1>
-        <p>Du bliver omdirigere efter 5 sekunder eller tryk på tilbage knappen</p>
-    </div>
+
+    <!-- Navbar -->
+    <header>
+        <!-- Logo -->
+        <a href="#home" class="site-logo" aria-label="Home Page">豪</a>
+        
+        <!-- Main nav -->
+        <nav class="main-nav">
+            <ul class="nav-list">
+                <li class="nav-list-item"><a href="https://www.haoyechen.dk/#home" class="nav-link">Home</a></li>
+                <li class="nav-list-item"><a href="https://www.haoyechen.dk/#about" class="nav-link">About</a></li>
+                <li class="nav-list-item"><a href="https://www.haoyechen.dk/#projects" class="nav-link">Projects</a></li>
+                <li class="nav-list-item"><a href="https://www.haoyechen.dk/#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    
+        <!-- Mobile nav -->
+        <nav class="mobile-nav">
+            <span class="hamburger-menu-icon" onclick="openNav()">&#9776;</span>
+            
+            <div id="hamburger" class="overlay-menu">
+                <div class="closebtn" onclick="closeNav()">&times;</div>
+                    
+                    <div class="overlay-menu-content">
+                        <ul>
+                            <li class="nav-list-item"><a href="https://www.haoyechen.dk/#home" class="nav-link" onclick="closeNav()">Home</a></li>
+                            <li class="nav-list-item"><a href="https://www.haoyechen.dk/#about" class="nav-link" onclick="closeNav()">About</a></li>
+                            <li class="nav-list-item"><a href="https://www.haoyechen.dk/#projects" class="nav-link" onclick="closeNav()">Projects</a></li>
+                            <li class="nav-list-item"><a href="https://www.haoyechen.dk/#contact" class="nav-link" onclick="closeNav()">Contact</a></li>
+                        </ul>
+                    </div>
+            </div>  
+        </nav>
+    </header>
+
+    <section class="success-section">
+        <img src="/img/check-circle.gif" alt="check circle image">
+        <h1>Din indsendelse er modtaget!</h1>
+        <p class="loading-dots">Du bliver omdirigeret om 5 sekunder<span>.</span><span>.</span><span>.</span></p>
+    </section>
+
+    <footer class="footer">
+        <p>Hao Ye Chen &copy; 2018 - <script>document.write(new Date().getFullYear())</script> - All Rights Reserved</p>
+    </footer>
     <!-- <script>
         setTimeout(function(){
            window.location.href = 'https://www.haoyechen.dk';
         }, 5000);
      </script> -->
+     <script src="javascript/main.js"></script>
 </body>
 </html>
