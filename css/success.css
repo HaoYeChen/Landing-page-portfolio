@@ -145,11 +145,8 @@ header {
   cursor: pointer;
 }
 
-.success-container {
-}
-
 /* ###########################################
-                Error section
+                Success section
 ############################################## */
 .success-section {
   height: 100%;
