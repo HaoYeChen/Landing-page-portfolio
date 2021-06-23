@@ -404,15 +404,24 @@
                     <div class="fields">
 
                         <div class="field">
-                            <input type="text" name="name" id="name" placeholder="Name*" required="required"/>
+                            <input type="text" name="name" id="name" placeholder="Fulde Navn*" required="required"
+                            oninvalid="this.setCustomValidity('Please fill enter your full name')"
+                            oninput="this.setCustomValidity('')"
+                            />
                         </div>
 
                         <div class="field">
-                            <input type="email" name="email" id="email" placeholder="Email*" required="required"/>
+                            <input type="email" name="email" id="email" placeholder="Email*" required="required"
+                            oninvalid="this.setCustomValidity('Please fill enter your email')"
+                            oninput="this.setCustomValidity('')"
+                            />
                             
                         </div>
                         <div class="field">
-                            <textarea name="message" id="message" rows="7" placeholder="Message*" required="required"></textarea>
+                            <textarea name="message" id="message" rows="7" placeholder="Message*" required="required"
+                            oninvalid="this.setCustomValidity('Please fill enter your message')"
+                            oninput="this.setCustomValidity('')"
+                            ></textarea>
                         </div>
 
                         <div class="field">
@@ -431,7 +440,10 @@
                         </script>
                         
                         <div class="field">
-                            <div data-netlify-recaptcha="true"></div>
+                            <div data-netlify-recaptcha="true"
+                            oninvalid="this.setCustomValidity('Please confirm that you are not a robot')"
+                            oninput="this.setCustomValidity('')"
+                            ></div>
                         </div>
 
                         <div class="field submit-button">
