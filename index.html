@@ -432,8 +432,9 @@
                         <script type="text/javascript">
                             window.onload = function() {
                                 var $recaptcha = document.querySelector('#g-recaptcha-response');
+                                var required = "Please confirm that you are not a robot";
                                 if($recaptcha) {
-                                    $recaptcha.setAttribute("Please confirm that you are not a robot", "required");
+                                    $recaptcha.setAttribute("required", "required");
                                 }
                             };
                         </script>
