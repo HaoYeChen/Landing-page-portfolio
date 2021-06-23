@@ -545,6 +545,10 @@ td {
   padding: 10px;
 }
 
+.field p {
+  font-size: 0.8rem;
+}
+
 /* input */
 input[type="text"],
 [type="email"],
@@ -565,6 +569,16 @@ input[type="file"] {
   border: 1px dashed rgba(255, 255, 255, 0.4);
   border-style: dashed;
   padding: 15px;
+}
+
+#g-recaptcha-response {
+  display: block !important;
+  position: absolute;
+  margin: -78px 0 0 0 !important;
+  width: 302px !important;
+  height: 76px !important;
+  z-index: -999999;
+  opacity: 0;
 }
 
 input[type="submit"] {
@@ -756,6 +770,9 @@ span.rev.phone:after {
     padding: 10px;
     margin: 70px;
     flex: 50%;
+  }
+  .field p {
+    text-align: left;
   }
   .contact-left {
     order: 1;
