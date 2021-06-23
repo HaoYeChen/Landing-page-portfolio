@@ -495,18 +495,19 @@
     </footer>
 
     <div class="loader-wrapper">
-        <span class="loader"><span class="loader-inner"></span></span>
-      </div>
-  
-      <script>
-          $(window).on("load",function(){
-            $(".loader-wrapper").fadeOut(2000);
-          });
-      </script>
+        <!-- <span class="loader"><span class="loader-inner"></span></span> -->
+        <img src="/img/loading-dots.gif" alt="pre-loading">
+    </div>
 
     <!-- jquery & javascript -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>    
-    <script src="javascript/main.js"></script>
+    <script language="JavaScript" type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>    
+    <script language="JavaScript" type="text/javascript" src="javascript/main.js"></script>
+
+    <script type="text/javascript">
+        $(window).on("load",function(){
+          $(".loader-wrapper").fadeOut("slow");
+        });
+    </script>
 
     <script type="text/javascript">
         $(document).ready(function(){
