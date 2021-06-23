@@ -405,21 +405,21 @@
 
                         <div class="field">
                             <input type="text" name="name" id="name" placeholder="Fulde Navn*" required="required"
-                            oninvalid="this.setCustomValidity('Please fill enter your full name')"
+                            oninvalid="this.setCustomValidity('Please enter your full name.')"
                             oninput="this.setCustomValidity('')"
                             />
                         </div>
 
                         <div class="field">
                             <input type="email" name="email" id="email" placeholder="Email*" required="required"
-                            oninvalid="this.setCustomValidity('Please fill enter your email')"
+                            oninvalid="this.setCustomValidity('Please enter your email.')"
                             oninput="this.setCustomValidity('')"
                             />
                             
                         </div>
                         <div class="field">
                             <textarea name="message" id="message" rows="7" placeholder="Message*" required="required"
-                            oninvalid="this.setCustomValidity('Please fill enter your message')"
+                            oninvalid="this.setCustomValidity('Please enter your message.')"
                             oninput="this.setCustomValidity('')"
                             ></textarea>
                         </div>
@@ -432,7 +432,6 @@
                         <script type="text/javascript">
                             window.onload = function() {
                                 var $recaptcha = document.querySelector('#g-recaptcha-response');
-                                var required = "Please confirm that you are not a robot";
                                 if($recaptcha) {
                                     $recaptcha.setAttribute("required", "required");
                                 }
