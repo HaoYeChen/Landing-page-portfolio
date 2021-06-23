@@ -435,14 +435,15 @@
 
                                 if($recaptcha) {
                                     $recaptcha.setAttribute("required", "required");
+                                    oninvalid="this.setCustomValidity('Please confirm that you are not a robot')"
+                                    oninput="this.setCustomValidity('')"
                                 }
                             };
                         </script>
                         
                         <div class="field">
                             <div data-netlify-recaptcha="true"
-                            oninvalid="this.setCustomValidity('Please confirm that you are not a robot')"
-                            oninput="this.setCustomValidity('')"
+                            
                             ></div>
                         </div>
 
