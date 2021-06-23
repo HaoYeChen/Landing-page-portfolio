@@ -417,7 +417,18 @@
 
                         <div class="field">
                             <input type="file" name="myfile" rows="7" aria-label="Upload file or files" multiple>
+                            <p>Maks. filstørrelse: 10MB</p>
                         </div>
+
+                        <script type="text/javascript">
+                            window.onload = function() {
+                                var $recaptcha = document.querySelector('#g-recaptcha-response');
+
+                                if($recaptcha) {
+                                    $recaptcha.setAttribute("required", "required");
+                                }
+                            };
+                        </script>
                         
                         <div class="field">
                             <div data-netlify-recaptcha="true"></div>
