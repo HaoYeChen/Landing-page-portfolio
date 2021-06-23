@@ -432,19 +432,18 @@
                         <script type="text/javascript">
                             window.onload = function() {
                                 var $recaptcha = document.querySelector('#g-recaptcha-response');
-
                                 if($recaptcha) {
                                     $recaptcha.setAttribute("required", "required");
-                                    oninvalid="this.setCustomValidity('Please confirm that you are not a robot')"
-                                    oninput="this.setCustomValidity('')"
                                 }
                             };
                         </script>
                         
                         <div class="field">
-                            <div data-netlify-recaptcha="true"
-                            
-                            ></div>
+                            <div data-netlify-recaptcha="true">
+                                <input type="hidden" 
+                                oninvalid="this.setCustomValidity('Please confirm that you are not a robot')"
+                                oninput="this.setCustomValidity('')">
+                            </div>
                         </div>
 
                         <div class="field submit-button">
