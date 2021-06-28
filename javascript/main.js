@@ -64,3 +64,32 @@ $(document).ready(function(){
     } // End if
   });
 });
+
+/* ###########################################
+              Pre loading
+############################################## */
+
+$(window).on("load",function(){
+    $(".loader-wrapper").fadeOut("slow");
+});
+
+/* ###########################################
+        Data filter for project section
+############################################## */
+
+$(document).ready(function(){
+  $('.list').click(function(){
+    const value = $(this).attr('data-filter');
+    if (value == 'all'){
+      $('.box').show('1000');
+    }
+    else{
+      $('.box').not('.'+value).hide('1000');
+      $('.box').filter('.'+value).show('1000');
+    }
+  })
+  //add active class on selected item
+  $('.list').click(function(){
+    $(this).addClass('active').siblings().removeClass('active');
+  })
+})
