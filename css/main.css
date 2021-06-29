@@ -234,8 +234,6 @@ header {
               About section
 ############################################## */
 
-.about-section {
-}
 .about-section h2 {
   /* This margin-top fixes the white gap between sections*/
   margin-top: 0px;
@@ -345,9 +343,6 @@ td {
 /* ###########################################
               Projects section
 ############################################## */
-
-.projects-section {
-}
 
 .projects-section h2 {
   /* This margin-top fixes the white gap between sections*/
