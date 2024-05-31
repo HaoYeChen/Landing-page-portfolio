@@ -612,7 +612,8 @@ input[type="submit"]:hover {
   align-items: center;
 }
 /* reverse phone number for counter spam bots */
-span.rev {
+
+/*span.rev {
   unicode-bidi: bidi-override;
   direction: rtl;
 }
@@ -622,6 +623,7 @@ span.rev.phone:before {
 span.rev.phone:after {
   content: " 18 06 (54+)";
 }
+*/
 
 .contact-email {
   text-decoration: none;
